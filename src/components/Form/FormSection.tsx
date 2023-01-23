@@ -1,10 +1,10 @@
-import "./FormSection.css";
+import styles from "./FormSection.module.css";
 
 const FormSection = () => {
   return (
-    <div className="form__section">
-      <div className="gif"></div>
-      <div className="form">
+    <div className={styles["form__section"]}>
+      <div className={styles.gif}></div>
+      <div className={styles.form}>
         <h3>Ask me!</h3>
         <form action="">
           <input type="email" placeholder="Your e-mail.." required /> <br />
@@ -16,7 +16,7 @@ const FormSection = () => {
             placeholder="Hi, How are you?"
             required
           ></textarea>
-          <div className="form__send">
+          <div className={styles["form__send"]}>
             <button type="submit" className="btn-correct">
               Send
             </button>

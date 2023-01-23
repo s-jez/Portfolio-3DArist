@@ -1,4 +1,4 @@
-import "./MainSection.css";
+import styles from "./MainSection.module.css";
 
 import iframe from "../../assets/frame.webp";
 import linkedin from "../../assets/linkedin.png";
@@ -7,20 +7,20 @@ import artstation from "../../assets/arstation.png";
 
 const MainSection = () => {
   return (
-    <main className="main">
-      <div className="main__info">
-        <span className="main__hello">Hi!</span>
+    <main className={styles.main}>
+      <div className={styles["main__info"]}>
+        <span className={styles["main__hello"]}>Hi!</span>
         <h1>I am Wiktoria</h1>
-        <span className="main__artist">3D ARTIST</span>
-        <div className="main__frame">
+        <span className={styles["main__artist"]}>3D ARTIST</span>
+        <div className={styles["main__frame"]}>
           <img src={iframe} width={300} alt="gallery frame" />
         </div>
-        <div className="main__socials">
+        <div className={styles["main__socials"]}>
           <a
             href="https://www.linkedin.com/in/wiktoria-sk%C3%B3rek/"
             target="_blank"
             rel="noreferrer"
-            className="main__social"
+            className={styles["main__social"]}
           >
             <img src={linkedin} width={80} alt="linkedin" />
           </a>
@@ -28,7 +28,7 @@ const MainSection = () => {
             href="https://www.instagram.com/kosiawr/"
             rel="noreferrer"
             target="_blank"
-            className="main__social"
+            className={styles["main__social"]}
           >
             <img src={instagram} width={80} alt="instagram" />
           </a>
@@ -36,7 +36,7 @@ const MainSection = () => {
             href="https://www.artstation.com/wiktoria_skorek"
             rel="noreferrer"
             target="_blank"
-            className="main__social"
+            className={styles["main__social"]}
           >
             <img src={artstation} width={80} alt="artstation" />
           </a>
