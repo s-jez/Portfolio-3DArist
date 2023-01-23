@@ -1,0 +1,52 @@
+.section__skils {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+
+  background-image: url("../../assets/bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 5rem;
+}
+.section__skils h3 {
+  font-size: 3.5rem;
+  color: white;
+  margin: 2rem 0;
+}
+.section__grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: 60%;
+  height: 70%;
+  padding: 1rem 0;
+  background: rgba(28, 28, 28, 0.8);
+  border-radius: 20px;
+}
+.section__circle {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+}
+.section__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.section__title {
+  margin: 1rem;
+  text-align: center;
+}
+@media (max-width: 1020px) {
+  .section__grid {
+    width: 100%;
+  }
+  .section__skils {
+    height: 100%;
+  }
+}

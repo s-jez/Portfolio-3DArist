@@ -1,0 +1,19 @@
+footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+.footer__social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+.footer__social a {
+  margin-left: 0.5rem;
+  color: white;
+}
+.footer__social a:hover {
+  opacity: 0.8;
+}
