@@ -26,6 +26,14 @@ const Navbar = () => {
             Contact
           </a>
         </li>
+        <div className={styles["mobile-nav"]}>
+          <div className={styles.logo}></div>
+          <div className={styles["hamburger-menu"]}>
+            <div className={styles.line}></div>
+            <div className={styles.line}></div>
+            <div className={styles.line}></div>
+          </div>
+        </div>
       </ul>
     </div>
   );

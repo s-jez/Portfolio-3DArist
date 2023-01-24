@@ -53,11 +53,46 @@
   text-transform: uppercase;
   margin-right: 5rem;
 }
+.mobile-nav {
+  display: none;
+  padding: 0 0.5rem;
+}
+.logo {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  background-color: #393939;
+  text-align: center;
+}
+.hamburger-menu {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  background-color: #393939;
+  text-align: center;
+  cursor: pointer;
+}
+.hamburger-menu {
+  padding-top: 0.5rem;
+}
+.hamburger-menu .line {
+  width: 46px;
+  height: 4px;
+  margin: 0.5rem 0.6rem;
+  background-color: white;
+}
 @media (max-width: 1020px) {
   .nav-title {
-    margin: auto;
+    display: none;
+    visibility: hidden;
   }
   .nav-item {
     display: none;
+    visibility: hidden;
+  }
+  .mobile-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
   }
 }
