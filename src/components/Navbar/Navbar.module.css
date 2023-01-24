@@ -81,6 +81,26 @@
   margin: 0.5rem 0.6rem;
   background-color: white;
 }
+.menu {
+  display: none;
+  width: 270px;
+  height: 200px;
+  background: rgba(41, 41, 41, 0.95);
+  border-radius: 30px;
+  padding: 20rem 0;
+  transform: translateX(-100%);
+}
+.menu-active {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: 200px;
+  background: rgba(41, 41, 41, 0.95);
+  border-radius: 30px;
+  padding: 20rem 0;
+  transform: translateX(0);
+}
+
 @media (max-width: 1020px) {
   .nav-title {
     display: none;
