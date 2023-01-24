@@ -17,7 +17,7 @@ const FormSection = () => {
             required
           ></textarea>
           <div className={styles["form__send"]}>
-            <button type="submit" className="btn-correct">
+            <button type="submit" className={styles["btn-correct"]}>
               Send
             </button>
           </div>

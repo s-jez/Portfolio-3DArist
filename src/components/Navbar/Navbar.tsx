@@ -8,7 +8,7 @@ const Navbar = () => {
         <li className={styles["nav-title"]}>
           <span></span>
           <span className={styles["nav-title__artist"]}>
-            <a href="/">Wiktoria Skórek</a>
+            <a href="#App">Wiktoria Skórek</a>
           </span>
         </li>
         <li className={styles["nav-item"]}>

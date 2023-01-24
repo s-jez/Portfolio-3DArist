@@ -7,7 +7,7 @@ import SkillsSection from "./components/Skills/SkillsSection";
 import Footer from "./components/Footer/Footer";
 function App() {
   return (
-    <div className="App">
+    <div className="App" id="App">
       <Navbar />
       <div className="container">
         <MainSection />
