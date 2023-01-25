@@ -63,9 +63,24 @@
 }
 @media (max-width: 1020px) {
   .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+  }
+  .form__section {
+    flex-direction: column;
   }
   .form textarea {
     width: 260px;
+  }
+}
+@media (max-width: 320px) {
+  .form textarea {
+    width: 200px;
+  }
+  .form input {
+    width: 200px;
   }
 }

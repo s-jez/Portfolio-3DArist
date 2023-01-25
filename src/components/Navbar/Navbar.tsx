@@ -50,7 +50,7 @@ const Navbar = () => {
         </li>
         <div className={styles["mobile-nav"]}>
           <a href="#App" className={styles.logo}>
-            logo
+            X
           </a>
           <div
             className={!isOpen ? styles["hamburger-menu"] : ""}

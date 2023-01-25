@@ -7,7 +7,6 @@
   z-index: 10;
 }
 .nav a {
-  display: inline-block;
   text-decoration: none;
   color: #fff;
   text-decoration: none;
@@ -58,7 +57,8 @@
   padding: 0 0.5rem;
 }
 .logo {
-  display: block;
+  display: flex;
+  justify-content: center;
   width: 4rem;
   height: 4rem;
   background-color: #393939;
@@ -114,5 +114,11 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+  }
+}
+@media (max-height: 600px) {
+  .nav-title {
+    font-size: 1.2rem;
+    white-space: nowrap;
   }
 }

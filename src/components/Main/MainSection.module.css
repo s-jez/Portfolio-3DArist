@@ -53,27 +53,63 @@ h1 {
   font-weight: 400;
 }
 @media (max-width: 1020px) {
-  .main__socials,
-  .main__info {
+  .main__info,
+  .main__socials {
     margin: 0rem;
   }
-  .main__info {
-    padding: 4rem 5rem;
-  }
   .main__hello {
-    font-size: 7rem;
+    font-size: 8rem;
   }
   h1 {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
   .main__artist {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .main__frame img {
     width: 250px;
     margin: 1.5rem;
   }
   .main__socials img {
+    width: 60px;
+  }
+  .main__socials {
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    white-space: nowrap;
+  }
+  .main__artist {
+    white-space: nowrap;
+  }
+}
+@media (max-width: 600px) {
+  .main__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-height: 800px) {
+  .main__hello {
+    font-size: 5rem;
+  }
+}
+@media (max-height: 750px) {
+  .main__hello {
+    font-size: 1.8rem;
+  }
+}
+@media (max-height: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .main__frame img {
+    width: 200px;
+  }
+  .main__socials a img {
     width: 60px;
   }
 }

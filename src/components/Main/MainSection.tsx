@@ -9,9 +9,11 @@ const MainSection = () => {
   return (
     <main className={styles.main}>
       <div className={styles["main__info"]}>
-        <span className={styles["main__hello"]}>Hi!</span>
-        <h1>I am Wiktoria</h1>
-        <span className={styles["main__artist"]}>3D ARTIST</span>
+        <div className={styles["main__header"]}>
+          <span className={styles["main__hello"]}>Hi!</span>
+          <h1>I am Wiktoria</h1>
+          <span className={styles["main__artist"]}>3D ARTIST</span>
+        </div>
         <div className={styles["main__frame"]}>
           <img src={iframe} width={300} alt="gallery frame" />
         </div>
