@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  padding-top: 10rem;
+  height: 100vh;
 }
 .section__art h3 {
   font-size: 3.5rem;
@@ -20,7 +20,7 @@
   position: absolute;
   right: 65%;
   top: 25%;
-  width: 32.5%;
+  width: 27.5%;
   height: 50%;
   background: rgba(40, 40, 40, 0.7);
   border-radius: 20px;
@@ -71,5 +71,14 @@
   }
   .section__block {
     width: 90%;
+  }
+  .section__gallery {
+    width: 90%;
+    padding-top: 30rem;
+  }
+}
+@media (max-width: 300px) {
+  .section__block {
+    font-size: 0.85rem;
   }
 }

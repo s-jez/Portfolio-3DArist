@@ -1,6 +1,7 @@
 .main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   height: 100vh;
 }
 .main__image {
@@ -43,7 +44,7 @@
 }
 .main__artist {
   font-family: "Changa One";
-  font-size: 3rem;
+  font-size: 5.5rem;
   line-height: 100px;
   font-weight: 400;
 }
@@ -68,10 +69,7 @@ h1 {
   }
   .main__frame img {
     width: 250px;
-    margin: 1.5rem;
-  }
-  .main__socials img {
-    width: 60px;
+    margin: 2rem;
   }
   .main__socials {
     display: flex;
@@ -91,6 +89,9 @@ h1 {
     justify-content: center;
     align-items: center;
   }
+  .main__socials img {
+    width: 65px;
+  }
 }
 @media (max-height: 800px) {
   .main__hello {
@@ -108,9 +109,6 @@ h1 {
   }
   .main__frame img {
     width: 200px;
-  }
-  .main__socials a img {
-    width: 60px;
   }
 }
 @keyframes rotationIn {
