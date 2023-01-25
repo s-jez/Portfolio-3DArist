@@ -74,7 +74,6 @@
   }
   .section__gallery {
     width: 90%;
-    padding-top: 30rem;
   }
 }
 @media (max-width: 300px) {
