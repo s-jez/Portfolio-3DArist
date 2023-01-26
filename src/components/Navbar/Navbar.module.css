@@ -59,6 +59,7 @@
 .logo {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 4rem;
   height: 4rem;
   background-color: #393939;
@@ -71,11 +72,17 @@
   background-color: #393939;
   text-align: center;
   cursor: pointer;
-}
-.hamburger-menu {
   padding-top: 0.5rem;
 }
-.hamburger-menu .line {
+.menu-burger {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+.hamburger-menu .line,
+.menu-burger .line {
   width: 46px;
   height: 4px;
   margin: 0.5rem 0.6rem;

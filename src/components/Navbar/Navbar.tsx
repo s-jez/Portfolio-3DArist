@@ -63,7 +63,7 @@ const Navbar = () => {
         </div>
         {isMobile && (
           <div className={isOpen ? styles["menu-active"] : styles["menu"]}>
-            <div className={styles["hamburger-menu"]} onClick={openMenu}>
+            <div className={styles["menu-burger"]} onClick={openMenu}>
               <div className={styles.line}></div>
             </div>
             <a href="/" onClick={openMenu}>

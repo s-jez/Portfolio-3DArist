@@ -20,7 +20,7 @@
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   width: 60%;
-  height: 70%;
+  height: 75%;
   padding: 1rem 0;
   background: rgba(28, 28, 28, 0.8);
   border-radius: 20px;
@@ -48,5 +48,14 @@
   }
   .section__skils {
     height: 100%;
+  }
+  .section__grid {
+    border-radius: 0;
+  }
+}
+@media (max-width: 400px) {
+  .section__grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    border-radius: 0;
   }
 }

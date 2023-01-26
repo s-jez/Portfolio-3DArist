@@ -1,0 +1,12 @@
+.arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 5rem;
+  height: 100%;
+  margin: 0 2.5rem;
+  color: white;
+}
+.arrows span {
+  cursor: pointer;
+}

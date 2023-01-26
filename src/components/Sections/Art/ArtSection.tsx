@@ -1,6 +1,15 @@
 import styles from "./ArtSection.module.css";
+import Arrows from "../../Carousel/Arrows/Arrows";
+import { useState } from "react";
 
 const ArtSection = () => {
+  const [slideIndex, setSlideIndex] = useState("");
+  const prevSlide = () => {
+    setSlideIndex(slideIndex);
+  };
+  const nextSlide = () => {
+    setSlideIndex(slideIndex + 1);
+  };
   return (
     <section className={styles["section__art"]}>
       <h3>Art</h3>
@@ -17,7 +26,9 @@ const ArtSection = () => {
           <button>BLOG</button>
         </div>
       </div>
-      <div className={styles["section__gallery"]}></div>
+      <div className={styles["gallery"]}>
+        <Arrows nextSlide={nextSlide} prevSlide={prevSlide} />
+      </div>
     </section>
   );
 };

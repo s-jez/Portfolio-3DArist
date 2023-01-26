@@ -58,11 +58,22 @@
   margin-top: 0.25rem;
   cursor: pointer;
 }
-.section__gallery {
+.gallery {
   margin-top: 20rem;
   width: 50%;
   height: 17rem;
   background-color: #333;
+  overflow: hidden;
+}
+.gallery__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  min-width: 100%;
+  width: 100%;
+  transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+  object-fit: cover;
 }
 @media (max-width: 1020px) {
   .section__block {
@@ -72,7 +83,7 @@
   .section__block {
     width: 90%;
   }
-  .section__gallery {
+  .gallery {
     width: 90%;
   }
 }
