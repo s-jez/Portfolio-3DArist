@@ -1,8 +1,12 @@
 footer {
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
-  padding: 2rem;
+  padding: 5rem 2.5rem;
   text-align: center;
+}
+.footer__title {
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 .footer__social {
   display: flex;

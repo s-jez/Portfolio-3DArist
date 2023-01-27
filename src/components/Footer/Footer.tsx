@@ -4,7 +4,9 @@ import styles from "./Footer.module.css";
 const Footer = () => {
   return (
     <footer>
-      <span>Wiktoria Skórek - 3D Artist</span>
+      <span className={styles["footer__title"]}>
+        Wiktoria Skórek - 3D Artist
+      </span>
       <div className={styles["footer__social"]}>
         <div className={styles.social}>
           <a
@@ -30,8 +32,8 @@ const Footer = () => {
           </a>
         </div>
         <div className={styles.social2}>
-          <a href="/portfolio">Portfolio</a>
-          <a href="/portfolio">Blog</a>
+          <a href="/">Portfolio</a>
+          <a href="/">Blog</a>
           <a href="/contact">Contact</a>
         </div>
       </div>

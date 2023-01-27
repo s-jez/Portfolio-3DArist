@@ -114,7 +114,16 @@
     white-space: nowrap;
   }
 }
-@media (max-width: 1020px) {
+@media (max-width: 850px) {
+  .nav-item {
+    display: flex;
+    margin: auto;
+  }
+  .nav-title {
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
   .nav-title {
     display: none;
     visibility: hidden;
