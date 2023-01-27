@@ -12,7 +12,7 @@ const Navbar = () => {
   useOnClickOutside(node, () => setIsOpen(false));
 
   const handleWindowResize = () => {
-    window.innerWidth < 1020 ? setIsMobile(true) : setIsMobile(false);
+    window.innerWidth <= 768 ? setIsMobile(true) : setIsMobile(false);
   };
 
   useEffect(() => {
@@ -50,7 +50,7 @@ const Navbar = () => {
         </li>
         <div className={styles["mobile-nav"]}>
           <a href="#App" className={styles.logo}>
-            X
+            &#x200b;
           </a>
           <div
             className={!isOpen ? styles["hamburger-menu"] : ""}

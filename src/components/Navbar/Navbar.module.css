@@ -13,6 +13,7 @@
   letter-spacing: 0.015rem;
   position: relative;
   padding: 15px 20px;
+  font-family: "Changa One", cursive;
 }
 .nav .nav-link::after {
   position: absolute;
@@ -56,6 +57,7 @@
 .mobile-nav {
   display: none;
   padding: 0 0.5rem;
+  font-family: "Changa One", cursive;
 }
 .logo {
   display: flex;
@@ -67,26 +69,30 @@
   text-align: center;
 }
 .hamburger-menu {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 4rem;
   height: 4rem;
   background-color: #393939;
   text-align: center;
   cursor: pointer;
-  padding-top: 0.5rem;
 }
 .menu-burger {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 4rem;
   height: 4rem;
   cursor: pointer;
-  margin-left: 0.5rem;
 }
 .hamburger-menu .line,
 .menu-burger .line {
   width: 46px;
   height: 4px;
-  margin: 0.5rem 0.6rem;
+  margin: 0.2rem;
   background-color: white;
 }
 .menu {
@@ -101,11 +107,14 @@
 .menu-active {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 10rem;
   width: 270px;
   height: 200px;
   background: rgba(41, 41, 41, 0.95);
   border-radius: 30px;
-  padding: 20rem 0;
+  padding: 10rem 2.5rem;
   transform: translateX(0);
 }
 
@@ -136,6 +145,13 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+  }
+  .nav a {
+    font-size: 1.8rem;
+  }
+  .menu-burger {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (max-height: 600px) {
