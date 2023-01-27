@@ -37,12 +37,15 @@
   list-style: none;
   align-items: center;
 }
-.nav-title {
+.nav-title a {
   font-size: 1.8rem;
   margin-right: auto;
   margin: 0 10rem;
   margin-right: auto;
   color: #fff;
+  font-weight: 400;
+  font-family: "Merienda One", "cursive";
+  font-weight: 400;
 }
 .nav-title__artist {
   opacity: 90%;
@@ -128,7 +131,7 @@
     display: flex;
     margin: auto;
   }
-  .nav-title {
+  .nav-title a {
     margin: 0;
   }
 }
