@@ -2,11 +2,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 5rem;
+  font-size: 3.5rem;
   height: 100%;
   margin: 0 2.5rem;
   color: white;
 }
+
 .arrows span {
   cursor: pointer;
+  z-index: 1;
+  user-select: none;
+}
+@media (max-width: 1020px) {
+  .arrows {
+    font-size: 2.5rem;
+  }
 }

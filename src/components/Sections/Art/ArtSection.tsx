@@ -1,14 +1,33 @@
 import styles from "./ArtSection.module.css";
 import Arrows from "../../Carousel/Arrows/Arrows";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import frame_1 from "../../../assets/frame_1.png";
+import frame_2 from "../../../assets/frame_2.png";
+import Dots from "../../Carousel/Dots/Dots";
 
 const ArtSection = () => {
-  const [slideIndex, setSlideIndex] = useState("");
+  const [slideIndex, setSlideIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSlideIndex(slideIndex);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [slideIndex]);
+
   const prevSlide = () => {
-    setSlideIndex(slideIndex);
+    if (slideIndex < 0) {
+      setSlideIndex(0);
+    } else {
+      setSlideIndex(slideIndex + 1);
+    }
   };
   const nextSlide = () => {
-    setSlideIndex(slideIndex + 1);
+    if (slideIndex > 0) {
+      setSlideIndex(0);
+    } else {
+      setSlideIndex(slideIndex - 1);
+    }
   };
   return (
     <section className={styles["section__art"]}>
@@ -26,8 +45,26 @@ const ArtSection = () => {
           <button>BLOG</button>
         </div>
       </div>
-      <div className={styles["gallery"]}>
+      <div
+        className={styles["gallery"]}
+        style={
+          slideIndex === 0
+            ? {
+                backgroundImage: `url(${frame_1})`,
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+              }
+            : {
+                backgroundImage: `url(${frame_2})`,
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+              }
+        }
+      >
         <Arrows nextSlide={nextSlide} prevSlide={prevSlide} />
+        <Dots activeIndex={slideIndex} />
       </div>
     </section>
   );
