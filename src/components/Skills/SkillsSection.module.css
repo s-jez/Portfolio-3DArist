@@ -2,13 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 110vh;
-
   background-image: url("../../assets/bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 5rem;
+  padding: 15rem 0;
 }
 .section__skils h3 {
   font-size: 3.5rem;
