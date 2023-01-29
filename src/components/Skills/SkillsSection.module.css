@@ -6,7 +6,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 15rem 0;
+  padding: 30rem 0;
 }
 .section__skils h3 {
   font-size: 3.5rem;
@@ -49,6 +49,11 @@
   }
   .section__grid {
     border-radius: 0;
+  }
+}
+@media (max-width: 600px) {
+  .section__skils {
+    padding: 10rem 0rem;
   }
 }
 @media (max-width: 400px) {

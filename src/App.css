@@ -5,3 +5,7 @@
   background-position: center;
   height: 100vh;
 }
+.container {
+  max-width: 1920px;
+  margin: auto;
+}

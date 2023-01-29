@@ -28,3 +28,6 @@ html {
   border-radius: 10px;
   border: 0px solid #ffffff;
 }
+body {
+  background-color: #333;
+}

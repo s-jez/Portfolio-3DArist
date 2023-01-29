@@ -14,8 +14,8 @@ function App() {
         <SkillsSection />
         <ArtSection />
         <FormSection />
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }

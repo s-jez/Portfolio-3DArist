@@ -7,13 +7,13 @@
   background-position: center;
 
   height: 100%;
-  padding: 15rem 0;
+  padding: 30rem 0;
 }
 .gif {
   width: 50%;
 }
 .form {
-  width: 35%;
+  width: 38%;
   max-height: 2000px;
   display: flex;
   flex-direction: column;
@@ -77,6 +77,11 @@
   }
   .form textarea {
     width: 260px;
+  }
+}
+@media (max-width: 600px) {
+  .form__section {
+    padding: 15rem 0rem;
   }
 }
 @media (max-width: 320px) {

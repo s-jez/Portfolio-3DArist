@@ -8,7 +8,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 10rem 0;
+  padding: 20rem 0;
 }
 .section__art h3 {
   font-size: 3.5rem;
@@ -24,6 +24,7 @@
   background: rgba(40, 40, 40, 0.7);
   border-radius: 20px;
   z-index: 1;
+  padding-top: 2.5rem;
 }
 .section__block h4 {
   font-size: 2rem;
@@ -97,8 +98,16 @@
     margin-top: 35rem;
   }
 }
+@media (max-width: 600px) {
+  .section__art {
+    padding: 10rem 0rem;
+  }
+}
 @media (max-width: 300px) {
   .section__block {
     font-size: 0.85rem;
+  }
+  .section__more button {
+    width: 220px;
   }
 }
