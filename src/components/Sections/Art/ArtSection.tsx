@@ -1,7 +1,6 @@
 import styles from "./ArtSection.module.css";
 import Arrows from "../../Carousel/Arrows/Arrows";
 import { useState, useEffect } from "react";
-import frame_1 from "../../../assets/frame_1.png";
 import frame_2 from "../../../assets/frame_2.png";
 import Dots from "../../Carousel/Dots/Dots";
 
@@ -50,7 +49,7 @@ const ArtSection = () => {
         style={
           slideIndex === 0
             ? {
-                backgroundImage: `url(${frame_1})`,
+                backgroundColor: "#333",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
                 backgroundSize: "cover",

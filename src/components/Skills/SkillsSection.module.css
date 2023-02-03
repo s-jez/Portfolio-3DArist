@@ -6,7 +6,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 30rem 0;
+  padding: 15rem 0;
 }
 .section__skils h3 {
   font-size: 3.5rem;
@@ -40,6 +40,16 @@
   margin: 1rem;
   text-align: center;
 }
+@media (max-width: 1600px) {
+  .section__grid {
+    width: 80%;
+  }
+}
+@media (max-width: 1250px) {
+  .section__grid {
+    width: 100%;
+  }
+}
 @media (max-width: 1020px) {
   .section__grid {
     width: 100%;
@@ -51,14 +61,9 @@
     border-radius: 0;
   }
 }
-@media (max-width: 1600px) {
-  .section__grid {
-    width: 80%;
-  }
-}
-@media (max-width: 1250px) {
-  .section__grid {
-    width: 100%;
+@media (max-width: 800px) {
+  .section__card:last-child {
+    grid-column: 2;
   }
 }
 @media (max-width: 600px) {

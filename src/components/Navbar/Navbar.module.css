@@ -13,6 +13,7 @@
   letter-spacing: 0.015rem;
   position: relative;
   padding: 15px 20px;
+  margin: 0 1.5rem;
   font-family: "Changa One", cursive;
 }
 .nav .nav-link::after {
@@ -34,14 +35,17 @@
 .nav-list {
   height: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
+  align-items: center;
+}
+.nav-title {
+  display: flex;
   align-items: center;
 }
 .nav-title a {
   font-size: 1.8rem;
   margin-right: auto;
-  margin: 0 10rem;
   color: #fff;
   font-weight: 400;
   font-family: "Merienda One", "cursive";
@@ -50,12 +54,37 @@
 .nav-title__artist {
   opacity: 90%;
 }
+.nav-items {
+  display: flex;
+  margin: 0 1.5rem;
+}
 .nav-item {
   font-family: "Changa One", cursive;
   font-size: 1.5rem;
   text-transform: uppercase;
   margin-right: 5rem;
   margin: auto;
+}
+.nav-logo {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #5a5a5a;
+  margin: 0 0.5rem;
+}
+.nav-circle {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background: #474747;
+}
+.nav-language {
+  width: 5rem;
+  height: 3rem;
+  background: #393939;
+  color: white;
 }
 .mobile-nav {
   display: none;
@@ -112,12 +141,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  margin-top: 10rem;
-  width: 270px;
+  margin-top: -5rem;
+  margin-left: auto;
+  width: 300px;
   height: 200px;
   background: rgba(41, 41, 41, 0.95);
   border-radius: 30px;
-  padding: 10rem 2.5rem;
+  padding: 10rem 0rem;
   transform: translateX(0);
 }
 @media (max-width: 1100px) {
@@ -128,7 +158,10 @@
     margin: auto;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 1025px) {
+  .nav-items {
+    margin: 0;
+  }
   .nav-item {
     display: flex;
     margin: auto;
@@ -136,8 +169,11 @@
   .nav-title a {
     margin: 0;
   }
+  .nav-language {
+    margin-right: 1rem;
+  }
 }
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .nav-title {
     display: none;
     visibility: hidden;
@@ -153,10 +189,19 @@
   }
   .nav a {
     font-size: 1.8rem;
+    margin: 0rem;
   }
   .menu-burger {
     display: flex;
     flex-direction: column;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .mobile-nav a {
+    margin: 0rem;
+  }
+  .nav-list {
+    display: block;
   }
 }
 @media (max-height: 600px) {

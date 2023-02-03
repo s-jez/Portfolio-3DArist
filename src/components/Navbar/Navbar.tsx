@@ -12,7 +12,7 @@ const Navbar = () => {
   useOnClickOutside(node, () => setIsOpen(false));
 
   const handleWindowResize = () => {
-    window.innerWidth <= 768 ? setIsMobile(true) : setIsMobile(false);
+    window.innerWidth <= 968 ? setIsMobile(true) : setIsMobile(false);
   };
 
   useEffect(() => {
@@ -28,26 +28,33 @@ const Navbar = () => {
     <div className={styles.nav} ref={node}>
       <ul className={styles["nav-list"]}>
         <li className={styles["nav-title"]}>
-          <span></span>
+          <div className={styles["nav-logo"]}>
+            <span className={styles["nav-circle"]}></span>
+          </div>
           <span className={styles["nav-title__artist"]}>
             <a href="#App">Wiktoria Skórek</a>
           </span>
         </li>
-        <li className={styles["nav-item"]}>
-          <a href="/" className={styles["nav-link"]}>
-            Portfolio
-          </a>
-        </li>
-        <li className={styles["nav-item"]}>
-          <a href="/" className={styles["nav-link"]}>
-            Blog
-          </a>
-        </li>
-        <li className={styles["nav-item"]}>
-          <a href="/" className={styles["nav-link"]}>
-            Contact
-          </a>
-        </li>
+        <div className={styles["nav-items"]}>
+          <li className={styles["nav-item"]}>
+            <a href="/" className={styles["nav-link"]}>
+              Portfolio
+            </a>
+          </li>
+          <li className={styles["nav-item"]}>
+            <a href="/" className={styles["nav-link"]}>
+              Blog
+            </a>
+          </li>
+          <li className={styles["nav-item"]}>
+            <a href="/" className={styles["nav-link"]}>
+              Contact
+            </a>
+          </li>
+          <li className={styles["nav-item"]}>
+            <div className={styles["nav-language"]}></div>
+          </li>
+        </div>
         <div className={styles["mobile-nav"]}>
           <a href="#App" className={styles.logo}>
             &#x200b;

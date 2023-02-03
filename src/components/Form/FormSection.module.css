@@ -7,7 +7,7 @@
   background-position: center;
 
   height: 100%;
-  padding: 30rem 0;
+  padding: 15rem 0;
 }
 .gif {
   width: 50%;
@@ -44,11 +44,13 @@
   height: 150px;
   margin: 1rem 0;
   font-family: "Merienda One";
-  font-size: 1.2rem;
-  border-radius: 40px;
+  font-size: 1rem;
   border: 0;
   padding: 25px;
   border: 1px solid rgb(160, 160, 160);
+  overflow-y: scroll;
+  height: 150px;
+  resize: none;
 }
 .form__send {
   display: flex;
