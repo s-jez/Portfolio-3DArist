@@ -71,6 +71,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin: auto;
   }
   .form__section {
     flex-direction: column;

@@ -34,6 +34,7 @@
 .nav-list {
   height: 100%;
   display: flex;
+  justify-content: space-around;
   list-style: none;
   align-items: center;
 }
@@ -41,7 +42,6 @@
   font-size: 1.8rem;
   margin-right: auto;
   margin: 0 10rem;
-  margin-right: auto;
   color: #fff;
   font-weight: 400;
   font-family: "Merienda One", "cursive";
@@ -120,10 +120,12 @@
   padding: 10rem 2.5rem;
   transform: translateX(0);
 }
-
 @media (max-width: 1100px) {
   .nav-title {
     white-space: nowrap;
+  }
+  .nav-title a {
+    margin: auto;
   }
 }
 @media (max-width: 850px) {

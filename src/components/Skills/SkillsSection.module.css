@@ -19,7 +19,7 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   width: 60%;
   height: 75%;
-  padding: 1rem 0;
+  padding: 4.5rem 0;
   background: rgba(28, 28, 28, 0.8);
   border-radius: 20px;
 }
@@ -49,6 +49,16 @@
   }
   .section__grid {
     border-radius: 0;
+  }
+}
+@media (max-width: 1600px) {
+  .section__grid {
+    width: 80%;
+  }
+}
+@media (max-width: 1250px) {
+  .section__grid {
+    width: 100%;
   }
 }
 @media (max-width: 600px) {

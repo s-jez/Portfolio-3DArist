@@ -24,10 +24,10 @@
   background: rgba(40, 40, 40, 0.7);
   border-radius: 20px;
   z-index: 1;
-  padding-top: 2.5rem;
+  padding-top: 4rem;
 }
 .section__block h4 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
   color: white;
   margin: 2rem 0;
@@ -67,8 +67,9 @@
 .gallery {
   margin-top: 18rem;
   width: 60%;
-  height: 18rem;
+  height: 20rem;
   overflow: hidden;
+  z-index: 1;
 }
 .gallery__item {
   display: flex;
@@ -85,7 +86,7 @@
 }
 @media (max-width: 1020px) {
   .section__block {
-    top: 30%;
+    top: 25%;
     right: 5%;
   }
   .section__block {
