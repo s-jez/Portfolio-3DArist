@@ -30,27 +30,25 @@
   font-weight: 400;
 }
 .form input {
-  width: 250px;
-  height: 50px;
-  margin: 0.25rem 0;
+  margin: 0.8rem 0;
   font-family: "Merienda One";
   border-radius: 40px;
-  border: 0;
-  padding: 20px;
-  border: 1px solid rgb(160, 160, 160);
+  padding: 15px;
+  background-color: white;
+}
+.form-inputs {
+  display: flex;
+  flex-direction: column;
 }
 .form textarea {
-  width: 360px;
-  height: 150px;
-  margin: 1rem 0;
+  background-color: white;
+  width: 340px;
+  height: 150px !important;
   font-family: "Merienda One";
   font-size: 1rem;
-  border: 0;
-  padding: 25px;
-  border: 1px solid rgb(160, 160, 160);
-  overflow-y: scroll;
-  height: 150px;
-  resize: none;
+}
+.form-inputs label {
+  padding: 0.6rem;
 }
 .form__send {
   display: flex;

@@ -1,3 +1,4 @@
+import { TextField } from "@mui/material";
 import styles from "./FormSection.module.css";
 
 const FormSection = () => {
@@ -7,15 +8,29 @@ const FormSection = () => {
       <div className={styles.form}>
         <h3>Ask me!</h3>
         <form action="">
-          <input type="email" placeholder="Your e-mail.." required /> <br />
-          <input type="text" placeholder="Your name.." required /> <br />
-          <input type="text" placeholder="Topic" required /> <br />
-          <textarea
-            name=""
-            id=""
-            placeholder="Hi, How are you?"
-            required
-          ></textarea>
+          <div className={styles["form-inputs"]}>
+            <TextField
+              id="outlined-basic"
+              label="Your e-mail.."
+              variant="outlined"
+            />
+            <TextField
+              id="outlined-basic"
+              label="Your name.."
+              variant="outlined"
+            />
+            <TextField
+              id="outlined-basic"
+              label="Your topic.."
+              variant="outlined"
+            />
+            <TextField
+              id="outlined-basic"
+              label="Message.."
+              variant="outlined"
+              multiline
+            />
+          </div>
           <div className={styles["form__send"]}>
             <button type="submit" className={styles["btn-correct"]}>
               Send
