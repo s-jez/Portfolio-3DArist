@@ -2,12 +2,15 @@ import { TextField } from "@mui/material";
 import styles from "./FormSection.module.css";
 
 const FormSection = () => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+  };
   return (
     <div className={styles["form__section"]}>
       <div className={styles.gif}></div>
       <div className={styles.form}>
         <h3>Ask me!</h3>
-        <form action="">
+        <form action="" onSubmit={handleSubmit}>
           <div className={styles["form-inputs"]}>
             <TextField
               id="outlined-basic"

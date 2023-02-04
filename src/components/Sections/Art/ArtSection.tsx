@@ -1,33 +1,40 @@
 import styles from "./ArtSection.module.css";
 import Arrows from "../../Carousel/Arrows/Arrows";
-import { useState, useEffect } from "react";
-import frame_2 from "../../../assets/frame_2.png";
-import Dots from "../../Carousel/Dots/Dots";
+import { useEffect, useState, useRef } from "react";
+
+interface Image {
+  src: string;
+}
 
 const ArtSection = () => {
   const [slideIndex, setSlideIndex] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setSlideIndex(slideIndex);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [slideIndex]);
+  const intervalId = useRef<null | NodeJS.Timeout>(null);
+
+  const images: Image[] = [{ src: "#777" }, { src: "#222" }, { src: "#333" }];
 
   const prevSlide = () => {
-    if (slideIndex < 0) {
-      setSlideIndex(0);
-    } else {
-      setSlideIndex(slideIndex + 1);
-    }
+    clearInterval(intervalId.current as NodeJS.Timeout);
+    const shouldResetIndex = slideIndex === 0;
+    const index = shouldResetIndex ? images.length - 1 : slideIndex - 1;
+    setSlideIndex(index);
   };
+
   const nextSlide = () => {
-    if (slideIndex > 0) {
-      setSlideIndex(0);
-    } else {
-      setSlideIndex(slideIndex - 1);
-    }
+    clearInterval(intervalId.current as NodeJS.Timeout);
+    const shouldResetIndex = slideIndex === images.length - 1;
+    const index = shouldResetIndex ? 0 : slideIndex + 1;
+    setSlideIndex(index);
   };
+
+  useEffect(() => {
+    intervalId.current = setInterval(() => {
+      nextSlide();
+    }, 5000);
+    return () => clearInterval(intervalId.current as NodeJS.Timeout);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [slideIndex]);
+
   return (
     <section className={styles["section__art"]}>
       <h3>Art</h3>
@@ -46,24 +53,34 @@ const ArtSection = () => {
       </div>
       <div
         className={styles["gallery"]}
-        style={
-          slideIndex === 0
-            ? {
-                backgroundColor: "#333",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-              }
-            : {
-                backgroundImage: `url(${frame_2})`,
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-              }
-        }
+        style={{
+          backgroundColor: `${images[slideIndex].src}`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
       >
         <Arrows nextSlide={nextSlide} prevSlide={prevSlide} />
-        <Dots activeIndex={slideIndex} />
+        <div className={styles["images"]}>
+          {images.map((image, index) => (
+            <span
+              key={index}
+              style={{
+                display: "inline-block",
+                width: "20px",
+                height: "20px",
+                backgroundColor: slideIndex === index ? "black" : "white",
+                borderRadius: "50%",
+                marginRight: "5px",
+                cursor: "pointer",
+              }}
+              onClick={() => {
+                clearInterval(intervalId.current as NodeJS.Timeout);
+                setSlideIndex(index);
+              }}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
