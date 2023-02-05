@@ -103,11 +103,14 @@
     padding: 10rem 0rem;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 360px) {
   .section__block {
     font-size: 0.85rem;
   }
   .section__more button {
     width: 220px;
+  }
+  .section__block {
+    margin-top: -6rem;
   }
 }

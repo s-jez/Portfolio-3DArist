@@ -1,9 +1,14 @@
 .App {
+  height: 100vh;
   background-image: url("../src/assets/bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+}
+@media (max-height: 600px) {
+  .App {
+    height: 150vh;
+  }
 }
 .container {
   max-width: 1920px;
