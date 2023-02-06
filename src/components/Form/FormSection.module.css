@@ -21,6 +21,7 @@
   align-items: center;
   background: rgba(9, 9, 9, 0.5);
   border-radius: 40px;
+  padding: 1rem;
 }
 .form h3 {
   font-size: 3rem;
@@ -55,14 +56,9 @@
   justify-content: flex-end;
 }
 .btn-correct {
-  width: 200px;
+  width: 180px;
   height: 40px;
   cursor: pointer;
-  margin: 1rem 0;
-  font-family: "Merienda One";
-  border-radius: 30px;
-  background: #04bb00;
-  border: 0;
 }
 @media (max-width: 1020px) {
   .form {
@@ -70,7 +66,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
     margin: auto;
   }
   .form__section {
@@ -83,6 +79,9 @@
 @media (max-width: 600px) {
   .form__section {
     padding: 15rem 0rem;
+  }
+  .form {
+    width: 100%;
   }
 }
 @media (max-width: 320px) {

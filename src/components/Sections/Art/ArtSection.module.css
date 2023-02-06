@@ -102,6 +102,13 @@
   .section__art {
     padding: 10rem 0rem;
   }
+  .section__block {
+    width: 100%;
+    right: 0;
+  }
+  .gallery {
+    width: 100%;
+  }
 }
 @media (max-width: 360px) {
   .section__block {

@@ -49,20 +49,12 @@
     width: 80%;
   }
 }
-@media (max-width: 1250px) {
-  .section__grid {
-    width: 100%;
-  }
-}
 @media (max-width: 1020px) {
   .section__grid {
-    width: 100%;
+    width: 90%;
   }
   .section__skils {
     height: 100%;
-  }
-  .section__grid {
-    border-radius: 0;
   }
 }
 @media (max-width: 800px) {
@@ -73,6 +65,12 @@
 @media (max-width: 600px) {
   .section__skils {
     padding: 10rem 0rem;
+  }
+  .section__grid {
+    width: 100%;
+  }
+  .section__skils {
+    border-radius: 0px;
   }
 }
 @media (max-width: 400px) {

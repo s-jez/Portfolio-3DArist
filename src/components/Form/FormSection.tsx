@@ -1,4 +1,4 @@
-import { TextField } from "@mui/material";
+import { Button, TextField } from "@mui/material";
 import styles from "./FormSection.module.css";
 
 const FormSection = () => {
@@ -35,9 +35,13 @@ const FormSection = () => {
             />
           </div>
           <div className={styles["form__send"]}>
-            <button type="submit" className={styles["btn-correct"]}>
+            <Button
+              variant="contained"
+              color="success"
+              className={styles["btn-correct"]}
+            >
               Send
-            </button>
+            </Button>
           </div>
         </form>
       </div>
