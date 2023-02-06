@@ -83,7 +83,7 @@
   display: flex;
   justify-content: center;
 }
-@media (max-width: 1020px) {
+@media (max-width: 1100px) {
   .section__block {
     top: 25%;
     right: 5%;

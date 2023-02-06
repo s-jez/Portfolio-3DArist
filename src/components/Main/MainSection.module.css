@@ -30,7 +30,6 @@
   height: 25%;
   align-items: center;
   justify-content: flex-end;
-  align-self: flex-end;
   margin: 0 -8rem;
   padding: 1rem 0;
 }
@@ -79,7 +78,7 @@ h1 {
     height: 35%;
   }
 }
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   .main__socials {
     height: 40%;
   }
@@ -97,15 +96,16 @@ h1 {
   .main__info,
   .main__socials {
     margin: 0rem;
+    padding: 2.5rem;
   }
   .main__hello {
-    font-size: 8rem;
+    font-size: 8.5rem;
   }
   h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .main__artist {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   .main__frame img {
     width: 250px;
@@ -114,6 +114,8 @@ h1 {
   .main__socials {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    margin-top: 0.5rem;
   }
   h1 {
     white-space: nowrap;
@@ -166,10 +168,11 @@ h1 {
     width: 60px;
   }
   .main__hello {
-    font-size: 8rem;
+    font-size: 6rem;
   }
   .main__frame img {
     margin: 0rem;
+    width: 200px;
   }
   .main__artist {
     font-size: 2.5rem;
