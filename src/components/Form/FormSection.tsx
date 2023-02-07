@@ -6,7 +6,7 @@ const FormSection = () => {
     event.preventDefault();
   };
   return (
-    <div className={styles["form__section"]}>
+    <section className={styles["form__section"]}>
       <div className={styles.gif}></div>
       <div className={styles.form}>
         <h3>Ask me!</h3>
@@ -45,7 +45,7 @@ const FormSection = () => {
           </div>
         </form>
       </div>
-    </div>
+    </section>
   );
 };
 

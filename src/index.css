@@ -3,11 +3,18 @@
   margin: 0;
   padding: 0;
 }
+
 html {
-  font-family: "Merienda One", cursive;
   scroll-behavior: smooth;
 }
+
+body {
+  font-family: "Merienda One", cursive;
+  background-color: #333;
+}
+
 /* Scrollbar */
+
 /* Firefox */
 * {
   scrollbar-width: auto;
@@ -27,7 +34,4 @@ html {
   background-color: #5c5c5c;
   border-radius: 10px;
   border: 0px solid #ffffff;
-}
-body {
-  background-color: #333;
 }

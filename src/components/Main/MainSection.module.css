@@ -31,7 +31,7 @@
 }
 .main__socials {
   display: flex;
-  height: 25%;
+  height: 55%;
   align-items: center;
   justify-content: flex-end;
   margin: 0 -8rem;
@@ -82,7 +82,7 @@ h1 {
     height: 80%;
   }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .main__socials {
     height: 40%;
   }
@@ -94,6 +94,12 @@ h1 {
   }
   .main__artist {
     font-size: 4.5rem;
+  }
+  .main__frame img {
+    width: 270px;
+  }
+  .main__socials {
+    height: 70%;
   }
 }
 @media (max-width: 1020px) {

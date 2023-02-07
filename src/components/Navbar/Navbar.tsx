@@ -26,7 +26,7 @@ const Navbar = () => {
   const openMenu = () => setIsOpen(!isOpen);
   return (
     <nav className={styles.nav} ref={node}>
-      <ul className={styles["nav-list"]}>
+      <ul>
         <li className={styles["nav-title"]}>
           <div className={styles["nav-logo"]}>
             <span className={styles["nav-circle"]}></span>

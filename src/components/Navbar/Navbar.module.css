@@ -32,7 +32,7 @@
   width: 100%;
   left: 0;
 }
-.nav-list {
+.nav ul {
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -216,7 +216,7 @@
   .mobile-nav a {
     margin: 0rem;
   }
-  .nav-list {
+  .nav ul {
     display: block;
   }
 }
