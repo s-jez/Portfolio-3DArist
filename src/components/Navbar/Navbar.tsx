@@ -25,7 +25,7 @@ const Navbar = () => {
 
   const openMenu = () => setIsOpen(!isOpen);
   return (
-    <div className={styles.nav} ref={node}>
+    <nav className={styles.nav} ref={node}>
       <ul className={styles["nav-list"]}>
         <li className={styles["nav-title"]}>
           <div className={styles["nav-logo"]}>
@@ -85,7 +85,7 @@ const Navbar = () => {
           </div>
         )}
       </ul>
-    </div>
+    </nav>
   );
 };
 
