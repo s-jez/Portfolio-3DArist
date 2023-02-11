@@ -34,11 +34,11 @@
 }
 .main__socials {
   display: flex;
-  height: 55%;
-  align-items: center;
-  justify-content: flex-end;
-  margin: 0 -8rem;
-  padding: 1rem 0;
+  margin-top: 3.5rem;
+}
+.main__socials a > img {
+  border-radius: 26px;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.25));
 }
 .main__social {
   cursor: pointer;
@@ -70,9 +70,10 @@
   font-size: 5.5rem;
   line-height: 100px;
   font-weight: 400;
+  margin-left: -5.5rem;
 }
 .main__artist > :first-child {
-  text-shadow: -1px 20px #676767, 1px -1px #676767, -5px 1px #676767,
+  text-shadow: -1px 20px #676767, 1px -1px #676767, -0px 1px #676767,
     1px 1px #676767;
 }
 h1 {
@@ -80,15 +81,12 @@ h1 {
   padding: 0 3rem;
   font-weight: 400;
 }
-@media (min-width: 2560px) {
-  .main__socials {
-    height: 80%;
+@media (min-width: 1020px) {
+  .main__header {
+    margin-top: 6rem;
   }
 }
 @media (max-width: 1440px) {
-  .main__socials {
-    height: 40%;
-  }
   .main__hello {
     font-size: 8rem;
   }
@@ -101,16 +99,8 @@ h1 {
   .main__frame img {
     width: 270px;
   }
-  .main__socials {
-    height: 70%;
-  }
 }
 @media (max-width: 1020px) {
-  .main__info,
-  .main__socials {
-    margin: 0rem;
-    padding: 2.5rem;
-  }
   .main__hello {
     font-size: 8.5rem;
   }
@@ -135,6 +125,7 @@ h1 {
   }
   .main__artist {
     white-space: nowrap;
+    margin: 0;
   }
 }
 @media (min-width: 601px) {
