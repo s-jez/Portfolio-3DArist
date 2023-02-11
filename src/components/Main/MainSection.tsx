@@ -1,6 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import styles from "./MainSection.module.css";
 
-import iframe from "../../assets/frame.webp";
 import linkedin from "../../assets/linkedin.webp";
 import instagram from "../../assets/instagram.webp";
 import artstation from "../../assets/artstation.webp";
@@ -9,6 +9,11 @@ const MainSection = () => {
   return (
     <div className={styles.main}>
       <div className={styles["main__info"]}>
+        <a
+          className={styles["main__scroll"]}
+          aria-label="scroll arrow"
+          href="#footer"
+        ></a>
         <div className={styles["main__header"]}>
           <div className={styles["main__hello"]}>
             <span>H</span>

@@ -2,6 +2,10 @@ import { useState, useRef, useEffect } from "react";
 import useOnClickOutside from "../../hooks/useOnClickOutside";
 import styles from "./Navbar.module.css";
 
+import linkedin from "../../assets/linkedin.webp";
+import instagram from "../../assets/instagram.webp";
+import artstation from "../../assets/artstation.webp";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -74,14 +78,40 @@ const Navbar = () => {
               <div className={styles.line}></div>
             </div>
             <a href="/" onClick={openMenu}>
-              PORTFOLIO
+              Portfolio
             </a>
             <a href="/" onClick={openMenu}>
-              BLOG
+              Blog
             </a>
             <a href="/" onClick={openMenu}>
-              CONTACT
+              Contact
             </a>
+            <div className={styles["menu__icons"]}>
+              <a
+                href="https://www.linkedin.com/in/wiktoria-sk%C3%B3rek/"
+                target="_blank"
+                rel="noreferrer"
+                className={styles["main__social"]}
+              >
+                <img src={linkedin} width={80} alt="linkedin" />
+              </a>
+              <a
+                href="https://www.instagram.com/kosiawr/"
+                rel="noreferrer"
+                target="_blank"
+                className={styles["main__social"]}
+              >
+                <img src={instagram} width={80} alt="instagram" />
+              </a>
+              <a
+                href="https://www.artstation.com/wiktoria_skorek"
+                rel="noreferrer"
+                target="_blank"
+                className={styles["main__social"]}
+              >
+                <img src={artstation} width={80} alt="artstation" />
+              </a>
+            </div>
           </div>
         )}
       </ul>

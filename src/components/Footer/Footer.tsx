@@ -3,7 +3,7 @@ import styles from "./Footer.module.css";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer id="footer">
       <span className={styles["footer__title"]}>
         Wiktoria Skórek - 3D Artist
       </span>

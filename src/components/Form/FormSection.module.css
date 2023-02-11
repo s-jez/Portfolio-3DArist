@@ -8,6 +8,7 @@
 
   height: 100%;
   padding: 15rem 0;
+  position: relative;
 }
 .gif {
   width: 50%;
@@ -58,6 +59,15 @@
 .btn-correct {
   width: 180px;
   height: 40px;
+  cursor: pointer;
+}
+.form__scroll {
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 1);
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
   cursor: pointer;
 }
 @media (max-width: 1020px) {

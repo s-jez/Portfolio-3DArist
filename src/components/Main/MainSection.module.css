@@ -10,6 +10,7 @@
     rgba(0, 0, 0, 0.16850490196078427) 76%,
     rgba(0, 0, 0, 0) 100%
   );
+  position: relative;
 }
 .main__image {
   margin-right: auto;
@@ -46,6 +47,9 @@
 .main__socials {
   display: flex;
   margin-top: 3.5rem;
+}
+.main__socials a {
+  margin: 0 1rem;
 }
 .main__socials a > img {
   border-radius: 26px;
@@ -87,6 +91,15 @@
 .main__artist > :first-child {
   text-shadow: -1px 20px #676767, 1px -1px #676767, -0px 1px #676767,
     1px 1px #676767;
+}
+.main__scroll {
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 1);
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  cursor: pointer;
 }
 h1 {
   font-size: 3rem;
