@@ -3,10 +3,13 @@
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  background-image: url("../../../src/assets/bg.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.9192051820728291) 0%,
+    rgba(0, 0, 0, 0.16850490196078427) 76%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 .main__image {
   margin-right: auto;

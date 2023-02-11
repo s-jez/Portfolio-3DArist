@@ -5,3 +5,9 @@
   max-width: 1920px;
   margin: auto;
 }
+.App-header {
+  background-image: url("../src/assets/bg_house.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

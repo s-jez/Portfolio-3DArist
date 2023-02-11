@@ -7,7 +7,7 @@ import artstation from "../../assets/arstation.png";
 
 const MainSection = () => {
   return (
-    <main className={styles.main}>
+    <div className={styles.main}>
       <div className={styles["main__info"]}>
         <div className={styles["main__header"]}>
           <div className={styles["main__hello"]}>
@@ -51,7 +51,7 @@ const MainSection = () => {
           </a>
         </div>
       </div>
-    </main>
+    </div>
   );
 };
 
