@@ -1,9 +1,9 @@
 import styles from "./MainSection.module.css";
 
 import iframe from "../../assets/frame.webp";
-import linkedin from "../../assets/linkedin.png";
-import instagram from "../../assets/instagram.png";
-import artstation from "../../assets/arstation.png";
+import linkedin from "../../assets/linkedin.webp";
+import instagram from "../../assets/instagram.webp";
+import artstation from "../../assets/artstation.webp";
 
 const MainSection = () => {
   return (
