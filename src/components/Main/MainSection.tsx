@@ -50,7 +50,7 @@ const MainSection = () => {
           </div>
         </div>
         <div className={styles["main__frame"]}>
-          <img src={iframe} width={300} alt="gallery frame" />
+          <button className="main__button">Portfolio</button>
         </div>
       </div>
     </div>
