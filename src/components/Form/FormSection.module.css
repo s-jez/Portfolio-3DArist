@@ -62,10 +62,9 @@
   cursor: pointer;
 }
 .form__scroll {
-  width: 2rem;
-  height: 2rem;
+  width: 5rem;
+  height: 5rem;
   position: absolute;
-  padding: 3rem;
   bottom: 5%;
   right: 5%;
   cursor: pointer;
@@ -97,6 +96,9 @@
   }
   .form {
     width: 100%;
+  }
+  .form__scroll {
+    mask-size: 65px;
   }
 }
 @media (max-width: 320px) {

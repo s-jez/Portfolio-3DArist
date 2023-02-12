@@ -43,11 +43,6 @@
 .main__button:hover {
   box-shadow: inset 0 120px 0 0 #d80286;
 }
-
-.main__frame img:hover {
-  scale: 1.05;
-  animation: rotationIn 1s infinite;
-}
 .main__socials {
   display: flex;
   margin-top: 3.5rem;
@@ -97,10 +92,9 @@
     1px 1px #676767;
 }
 .main__scroll {
-  width: 2rem;
-  height: 2rem;
+  width: 5rem;
+  height: 5rem;
   position: absolute;
-  padding: 3rem;
   bottom: 5%;
   right: 5%;
   cursor: pointer;
@@ -130,7 +124,7 @@ h1 {
   .main__artist {
     font-size: 4.5rem;
   }
-  .main__frame button {
+  .main__button {
     width: 22.5rem;
     font-size: 2.8rem;
   }
@@ -158,7 +152,7 @@ h1 {
     white-space: nowrap;
     margin: 0;
   }
-  .main__frame button {
+  .main__button {
     width: 22.5rem;
     height: 7rem;
     font-size: 2.25rem;
@@ -185,6 +179,9 @@ h1 {
   .main__info {
     width: 100%;
     margin: auto;
+  }
+  .main__scroll {
+    mask-size: 65px;
   }
 }
 @media (max-height: 1000px) {
@@ -229,19 +226,8 @@ h1 {
   h1 {
     font-size: 1.8rem;
   }
-}
-@keyframes rotationIn {
-  0% {
-    transform: rotate(-6deg);
-  }
-  25% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(6deg);
-  }
-  100% {
-    transform: rotate(-6deg);
+  .main__button {
+    width: 15rem !important;
   }
 }
 @keyframes wave-text {
