@@ -55,7 +55,7 @@ const MainSection = () => {
           </div>
         </div>
         <div className={styles["main__frame"]}>
-          <button className="main__button">Portfolio</button>
+          <button className={styles["main__button"]}>Portfolio</button>
         </div>
       </div>
     </div>

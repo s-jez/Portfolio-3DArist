@@ -32,9 +32,7 @@ const Navbar = () => {
     <nav className={styles.nav} ref={node}>
       <ul>
         <li className={styles["nav-title"]}>
-          <div className={styles["nav-logo"]}>
-            <span className={styles["nav-circle"]}></span>
-          </div>
+          <div className={styles["nav-logo"]}></div>
           <span className={styles["nav-title__artist"]}>
             <a href="#App">Wiktoria Skórek</a>
           </span>
@@ -60,7 +58,7 @@ const Navbar = () => {
           </li>
         </div>
         <div className={styles["mobile-nav"]}>
-          <a href="#App" className={styles.logo}>
+          <a href="#App" className={styles["nav-logo"]}>
             &#x200b;
           </a>
           <div

@@ -70,8 +70,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #5a5a5a;
   margin: 0 0.5rem;
+  border-radius: 15px;
+  border: 3px solid #ffffff;
 }
 .nav-circle {
   width: 3.5rem;
@@ -82,8 +83,9 @@
 .nav-language {
   width: 5rem;
   height: 3rem;
-  background: #393939;
   color: white;
+  border: 3px solid #ffffff;
+  border-radius: 15px;
 }
 .mobile-nav {
   display: none;

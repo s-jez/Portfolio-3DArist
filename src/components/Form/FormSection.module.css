@@ -62,13 +62,18 @@
   cursor: pointer;
 }
 .form__scroll {
-  width: 3rem;
-  height: 3rem;
-  background-color: rgba(0, 0, 0, 1);
+  width: 2rem;
+  height: 2rem;
   position: absolute;
+  padding: 3rem;
   bottom: 5%;
   right: 5%;
   cursor: pointer;
+  mask-image: url("../../assets/circle-up.svg");
+  mask-size: 80px;
+  background-color: white;
+  mask-repeat: no-repeat;
+  position: absolute;
 }
 @media (max-width: 1020px) {
   .form {
