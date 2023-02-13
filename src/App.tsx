@@ -12,7 +12,7 @@ function App() {
       <header className="App-header">
         <MainSection />
       </header>
-      <main className="App-container">
+      <main className="App-container" role="main">
         <SkillsSection />
         <ArtSection />
         <FormSection />

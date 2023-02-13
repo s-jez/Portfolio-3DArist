@@ -37,7 +37,7 @@ const Navbar = () => {
             <a href="#App">Wiktoria Skórek</a>
           </span>
         </li>
-        <div className={styles["nav-items"]}>
+        <ul className={styles["nav-items"]}>
           <li className={styles["nav-item"]}>
             <a href="/" className={styles["nav-link"]}>
               Portfolio
@@ -56,8 +56,8 @@ const Navbar = () => {
           <li className={styles["nav-item"]}>
             <div className={styles["nav-language"]}></div>
           </li>
-        </div>
-        <div className={styles["mobile-nav"]}>
+        </ul>
+        <li className={styles["mobile-nav"]}>
           <a href="#App" className={styles["nav-logo"]}>
             &#x200b;
           </a>
@@ -69,9 +69,9 @@ const Navbar = () => {
             <div className={styles.line}></div>
             <div className={styles.line}></div>
           </div>
-        </div>
+        </li>
         {isMobile && (
-          <div className={isOpen ? styles["menu-active"] : styles["menu"]}>
+          <li className={isOpen ? styles["menu-active"] : styles["menu"]}>
             <div className={styles["menu-burger"]} onClick={openMenu}>
               <div className={styles.line}></div>
             </div>
@@ -110,7 +110,7 @@ const Navbar = () => {
                 <img src={artstation} width={80} alt="artstation" />
               </a>
             </div>
-          </div>
+          </li>
         )}
       </ul>
     </nav>
