@@ -5,6 +5,9 @@ import styles from "./Navbar.module.css";
 import linkedin from "../../assets/linkedin.webp";
 import instagram from "../../assets/instagram.webp";
 import artstation from "../../assets/artstation.webp";
+import Blog from "../Blog/Blog";
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,17 +42,17 @@ const Navbar = () => {
         </li>
         <li className={styles["nav-items"]}>
           <li className={styles["nav-item"]}>
-            <a href="/" className={styles["nav-link"]}>
+            <Link to="/portfolio" className={styles["nav-link"]}>
               Portfolio
-            </a>
+            </Link>
           </li>
           <li className={styles["nav-item"]}>
-            <a href="/" className={styles["nav-link"]}>
+            <Link to="/blog" className={styles["nav-link"]}>
               Blog
-            </a>
+            </Link>
           </li>
           <li className={styles["nav-item"]}>
-            <a href="/" className={styles["nav-link"]}>
+            <a href="#contact" className={styles["nav-link"]}>
               Contact
             </a>
           </li>
@@ -75,13 +78,13 @@ const Navbar = () => {
             <div className={styles["menu-burger"]} onClick={openMenu}>
               <div className={styles.line}></div>
             </div>
-            <a href="/" onClick={openMenu}>
+            <Link to="/portfolio" onClick={openMenu}>
               Portfolio
-            </a>
-            <a href="/" onClick={openMenu}>
+            </Link>
+            <Link to="/blog" onClick={openMenu}>
               Blog
-            </a>
-            <a href="/" onClick={openMenu}>
+            </Link>
+            <a href="#contact" onClick={openMenu}>
               Contact
             </a>
             <div className={styles["menu__icons"]}>

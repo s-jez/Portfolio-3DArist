@@ -6,7 +6,7 @@ const FormSection = () => {
     event.preventDefault();
   };
   return (
-    <section className={styles["form__section"]}>
+    <section className={styles["form__section"]} id="contact">
       <a aria-label="scroll arrow" href="#App">
         <div className={styles["form__scroll"]}></div>
       </a>

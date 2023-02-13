@@ -4,6 +4,7 @@ import styles from "./MainSection.module.css";
 import linkedin from "../../assets/linkedin.webp";
 import instagram from "../../assets/instagram.webp";
 import artstation from "../../assets/artstation.webp";
+import { Link } from "react-router-dom";
 
 const MainSection = () => {
   return (
@@ -55,7 +56,9 @@ const MainSection = () => {
           </div>
         </div>
         <div className={styles["main__frame"]}>
-          <button className={styles["main__button"]}>Portfolio</button>
+          <Link to="/portfolio">
+            <button className={styles["main__button"]}>Portfolio</button>
+          </Link>
         </div>
       </div>
     </div>
