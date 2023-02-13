@@ -35,7 +35,7 @@ const MainSection = () => {
               rel="noreferrer"
               className={styles["main__social"]}
             >
-              <img src={linkedin} width={80} height={80} alt="linkedin" />
+              <img src={linkedin} width={80} height={75} alt="linkedin" />
             </a>
             <a
               href="https://www.instagram.com/kosiawr/"
@@ -43,7 +43,7 @@ const MainSection = () => {
               target="_blank"
               className={styles["main__social"]}
             >
-              <img src={instagram} width={80} height={80} alt="instagram" />
+              <img src={instagram} width={80} height={75} alt="instagram" />
             </a>
             <a
               href="https://www.artstation.com/wiktoria_skorek"
@@ -51,7 +51,7 @@ const MainSection = () => {
               target="_blank"
               className={styles["main__social"]}
             >
-              <img src={artstation} width={80} height={80} alt="artstation" />
+              <img src={artstation} width={80} height={75} alt="artstation" />
             </a>
           </div>
         </div>

@@ -208,6 +208,7 @@ h1 {
   }
   .main__socials a > img {
     width: 70px;
+    object-fit: contain;
   }
 }
 @media (max-width: 340px) {

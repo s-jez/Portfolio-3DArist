@@ -72,6 +72,7 @@
   }
   .section__skils {
     border-radius: 0px;
+    font-size: 0.62rem;
   }
 }
 @media (max-width: 400px) {
