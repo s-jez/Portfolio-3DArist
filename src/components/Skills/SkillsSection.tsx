@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./SkillsSection.module.css";
-
 import imageBlender from "../../assets/software/blender.webp";
 import imageMaya from "../../assets/software/maya.webp";
 import imageZBrush from "../../assets/software/zbrush.webp";
@@ -14,7 +13,7 @@ import imageSketchup from "../../assets/software/sketchup.webp";
 
 const SkillsSection = () => {
   return (
-    <section className={styles["section__skils"]}>
+    <section className={styles["section__skils"]} id="skills">
       <h2>Skills</h2>
       <div className={styles["section__grid"]}>
         <div className={styles["section__card"]}>

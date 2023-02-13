@@ -36,7 +36,7 @@ const ArtSection = () => {
   }, [slideIndex]);
 
   return (
-    <section className={styles["section__art"]}>
+    <section className={styles["section__art"]} id="art">
       <h3>Art</h3>
       <div className={styles["section__block"]}>
         <h4>Mądre pytanie?</h4>

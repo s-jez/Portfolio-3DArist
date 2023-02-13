@@ -97,7 +97,7 @@
   .form {
     width: 100%;
   }
-  .form__scroll {
+  .scroll {
     mask-size: 65px;
   }
 }

@@ -13,7 +13,7 @@ const MainSection = () => {
         <a
           className={styles["main__scroll"]}
           aria-label="scroll arrow"
-          href="#footer"
+          href="#skills"
         ></a>
         <div className={styles["main__header"]}>
           <div className={styles["main__hello"]}>

@@ -108,6 +108,7 @@ h1 {
   padding: 0 3rem;
   font-weight: 400;
 }
+
 @media (min-width: 1020px) {
   .main__header {
     margin-top: 6rem;
