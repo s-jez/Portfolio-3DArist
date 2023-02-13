@@ -92,9 +92,9 @@
     1px 1px #676767;
 }
 .main__scroll {
+  position: absolute;
   width: 5rem;
   height: 5rem;
-  position: absolute;
   bottom: 5%;
   right: 5%;
   cursor: pointer;
@@ -102,7 +102,6 @@
   mask-size: 80px;
   background-color: white;
   mask-repeat: no-repeat;
-  position: absolute;
 }
 h1 {
   font-size: 3rem;

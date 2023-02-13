@@ -8,7 +8,7 @@ const FormSection = () => {
   return (
     <section className={styles["form__section"]} id="contact">
       <a aria-label="scroll arrow" href="#App">
-        <div className={styles["form__scroll"]}></div>
+        <div className={styles["scroll"]}></div>
       </a>
       <div className={styles.gif}></div>
       <div className={styles.form}>

@@ -61,14 +61,14 @@
   height: 40px;
   cursor: pointer;
 }
-.form__scroll {
+.scroll {
   width: 5rem;
   height: 5rem;
   position: absolute;
   bottom: 5%;
   right: 5%;
   cursor: pointer;
-  mask-image: url("../../assets/circle-up.svg");
+  mask-image: url("../../assets/circle-down.svg");
   mask-size: 80px;
   background-color: white;
   mask-repeat: no-repeat;
