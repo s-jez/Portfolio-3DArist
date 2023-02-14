@@ -6,7 +6,7 @@
   margin: auto;
 }
 .App-header {
-  background-image: url("../src/assets/bg_house.webp");
+  background-image: url("../../../assets/bg_house.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

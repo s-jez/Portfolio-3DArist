@@ -5,7 +5,6 @@ import styles from "./Navbar.module.css";
 import linkedin from "../../assets/linkedin.webp";
 import instagram from "../../assets/instagram.webp";
 import artstation from "../../assets/artstation.webp";
-import Blog from "../Blog/Blog";
 import React from "react";
 import { Link } from "react-router-dom";
 

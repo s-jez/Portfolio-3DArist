@@ -98,7 +98,7 @@
   bottom: 5%;
   right: 5%;
   cursor: pointer;
-  mask-image: url("../../assets/circle-down.svg");
+  mask-image: url("../../../assets/circle-down.svg");
   mask-size: 80px;
   background-color: white;
   mask-repeat: no-repeat;

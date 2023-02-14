@@ -1,7 +1,7 @@
 .form__section {
   display: flex;
 
-  background-image: url("../../assets/bg.webp");
+  background-image: url("../../../assets/bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -68,7 +68,7 @@
   bottom: 5%;
   right: 5%;
   cursor: pointer;
-  mask-image: url("../../assets/circle-down.svg");
+  mask-image: url("../../../assets/circle-down.svg");
   transform: rotate(180deg);
   mask-size: 80px;
   background-color: white;
