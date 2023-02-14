@@ -183,6 +183,11 @@ h1 {
   .main__scroll {
     mask-size: 65px;
   }
+  .main__button {
+    width: 18rem;
+    height: 7rem;
+    font-size: 2.25rem;
+  }
 }
 @media (max-height: 1000px) {
   .main {

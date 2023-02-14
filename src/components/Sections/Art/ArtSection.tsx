@@ -82,6 +82,11 @@ const ArtSection = () => {
           ))}
         </div>
       </div>
+      <a
+        className={styles["section__scroll"]}
+        href="#contact"
+        aria-label="scroll arrow"
+      ></a>
     </section>
   );
 };

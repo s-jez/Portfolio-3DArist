@@ -10,11 +10,6 @@ const MainSection = () => {
   return (
     <div className={styles.main}>
       <div className={styles["main__info"]}>
-        <a
-          className={styles["main__scroll"]}
-          aria-label="scroll arrow"
-          href="#skills"
-        ></a>
         <div className={styles["main__header"]}>
           <div className={styles["main__hello"]}>
             <span>H</span>
@@ -61,6 +56,11 @@ const MainSection = () => {
           </Link>
         </div>
       </div>
+      <a
+        className={styles["main__scroll"]}
+        aria-label="scroll arrow"
+        href="#skills"
+      ></a>
     </div>
   );
 };

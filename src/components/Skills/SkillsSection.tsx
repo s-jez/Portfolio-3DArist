@@ -139,6 +139,11 @@ const SkillsSection = () => {
           <span className={styles["section__title"]}>Sketchup</span>
         </div>
       </div>
+      <a
+        className={styles["section__scroll"]}
+        href="#art"
+        aria-label="scroll arrow"
+      ></a>
     </section>
   );
 };
