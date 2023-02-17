@@ -1,7 +1,12 @@
+.dots {
+  display: flex;
+  justify-content: center;
+}
 .dot {
-  width: 1.5rem;
-  height: 1.5rem;
+  display: inline-block;
+  width: 1.3rem;
+  height: 1.3rem;
   border-radius: 50%;
-  margin: 0 1.5rem;
-  background-color: white;
+  margin-right: 5px;
+  cursor: pointer;
 }

@@ -1,0 +1,24 @@
+.slider {
+  margin-top: 18rem;
+  width: 60%;
+  height: 20rem;
+  overflow: hidden;
+  z-index: 1;
+  object-fit: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+@media (max-width: 1100px) {
+  .slider {
+    width: 90%;
+    margin-top: 35rem;
+  }
+}
+@media (max-width: 600px) {
+  .slider {
+    width: 100%;
+  }
+}

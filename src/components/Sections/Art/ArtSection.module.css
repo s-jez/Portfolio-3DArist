@@ -87,15 +87,6 @@
   object-fit: cover;
   overflow: hidden;
 }
-.gallery__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.images {
-  display: flex;
-  justify-content: center;
-}
 @media (max-width: 1100px) {
   .section__block {
     top: 25%;
@@ -103,12 +94,6 @@
   }
   .section__block {
     width: 90%;
-  }
-  .gallery {
-    width: 90%;
-  }
-  .gallery {
-    margin-top: 35rem;
   }
 }
 @media (max-width: 600px) {
@@ -118,9 +103,6 @@
   .section__block {
     width: 100%;
     right: 0;
-  }
-  .gallery {
-    width: 100%;
   }
   .section__scroll {
     mask-size: 65px;
