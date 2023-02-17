@@ -37,6 +37,7 @@
   border-radius: 40px;
   padding: 1rem;
   background-color: white;
+  font-size: 0.8rem;
 }
 .form-inputs {
   display: flex;
@@ -58,8 +59,8 @@
   justify-content: flex-end;
 }
 .btn-correct {
-  width: 180px;
-  height: 40px;
+  width: 7rem;
+  height: 2.5rem;
   cursor: pointer;
 }
 .form__scroll {

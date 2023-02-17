@@ -30,6 +30,7 @@
   height: 8rem;
   border-radius: 15px;
   mix-blend-mode: luminosity;
+  margin-bottom: 1rem;
   transition: all 0.3s;
   font-family: "Merienda One";
   line-height: 104px;
@@ -175,10 +176,11 @@ h1 {
     align-items: center;
   }
   .main__socials img {
-    width: 75px;
+    width: 60px;
+    height: 60px;
   }
   .main__hello {
-    font-size: 8rem;
+    font-size: 8.5rem;
   }
   .main__info {
     width: 100%;
@@ -188,9 +190,12 @@ h1 {
     mask-size: 65px;
   }
   .main__button {
-    width: 18rem;
+    width: 17rem;
     height: 7rem;
     font-size: 2.25rem;
+  }
+  .main__artist {
+    font-size: 3rem;
   }
 }
 @media (max-height: 1000px) {
@@ -225,13 +230,13 @@ h1 {
     padding: 0;
   }
   .main__socials a > img {
-    width: 60px;
+    width: 55px;
   }
   .main__hello {
-    font-size: 6rem;
+    font-size: 8rem;
   }
   .main__artist {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
   }
   h1 {
     font-size: 1.8rem;

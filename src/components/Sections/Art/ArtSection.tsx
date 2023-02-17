@@ -7,7 +7,7 @@ const ArtSection = () => {
     <section className={styles["section__art"]} id="art">
       <h3>Art</h3>
       <div className={styles["section__block"]}>
-        <h4>Mądre pytanie?</h4>
+        <h4>Madre pytanie?</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
           nemo quos molestiae harum iusto nobis reiciendis illo distinctio
@@ -15,7 +15,7 @@ const ArtSection = () => {
           aliquid consequuntur perspiciatis?
         </p>
         <div className={styles["section__more"]}>
-          <span>Zobacz więcej</span>
+          <span>Zobacz wiecej</span>
           <button>BLOG</button>
         </div>
       </div>

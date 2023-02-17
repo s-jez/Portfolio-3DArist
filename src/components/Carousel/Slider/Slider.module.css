@@ -23,3 +23,8 @@
     margin-top: 32.5rem;
   }
 }
+@media (max-width: 320px) {
+  .slider {
+    margin-top: 36rem;
+  }
+}

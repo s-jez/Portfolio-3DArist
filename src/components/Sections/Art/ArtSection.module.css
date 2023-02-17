@@ -8,7 +8,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 8rem 0;
+  padding: 10rem 0;
 }
 .section__art h3 {
   font-size: 3.5rem;
@@ -35,12 +35,12 @@
   position: absolute;
   right: 65%;
   top: 10%;
-  width: 27.5%;
+  width: 28%;
   height: 55%;
   background: rgba(40, 40, 40, 0.7);
   border-radius: 20px;
   z-index: 1;
-  padding-top: 4rem;
+  padding: 4rem 0.5rem;
 }
 .section__block h4 {
   font-size: 2.5rem;
@@ -110,6 +110,6 @@
     width: 220px;
   }
   .section__block {
-    margin-top: -6rem;
+    margin-top: -2rem;
   }
 }

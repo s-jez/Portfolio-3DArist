@@ -39,6 +39,7 @@ const FormSection = () => {
               variant="contained"
               color="success"
               className={styles["btn-correct"]}
+              size="medium"
             >
               Send
             </Button>
