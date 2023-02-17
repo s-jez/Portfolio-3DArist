@@ -8,7 +8,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 15rem 0;
+  padding: 8rem 0;
 }
 .section__art h3 {
   font-size: 3.5rem;
@@ -36,7 +36,7 @@
   right: 65%;
   top: 10%;
   width: 27.5%;
-  height: 50%;
+  height: 55%;
   background: rgba(40, 40, 40, 0.7);
   border-radius: 20px;
   z-index: 1;
@@ -80,16 +80,6 @@
   background: #d4a703;
   opacity: 0.9;
   scale: 1.05;
-}
-.gallery {
-  margin-top: 18rem;
-  width: 60%;
-  height: 20rem;
-  overflow: hidden;
-  z-index: 1;
-  transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
-  object-fit: cover;
-  overflow: hidden;
 }
 @media (max-width: 1100px) {
   .section__block {

@@ -1,5 +1,5 @@
 .slider {
-  margin-top: 18rem;
+  margin-top: 22.5rem;
   width: 60%;
   height: 20rem;
   overflow: hidden;
@@ -11,14 +11,15 @@
   background-size: cover;
   transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .slider {
     width: 90%;
-    margin-top: 35rem;
+    margin-top: 28rem;
   }
 }
 @media (max-width: 600px) {
   .slider {
     width: 100%;
+    margin-top: 32.5rem;
   }
 }
