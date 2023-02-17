@@ -26,6 +26,10 @@
   mask-size: 80px;
   background-color: white;
   mask-repeat: no-repeat;
+  transition: transform 0.3s ease;
+}
+.section__scroll:hover {
+  transform: translateY(10px);
 }
 .section__block {
   position: absolute;

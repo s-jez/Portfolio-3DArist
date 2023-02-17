@@ -57,6 +57,10 @@
   mask-size: 80px;
   background-color: white;
   mask-repeat: no-repeat;
+  transition: transform 0.3s ease;
+}
+.section__scroll:hover {
+  transform: translateY(10px);
 }
 @media (max-width: 1600px) {
   .section__grid {
@@ -85,7 +89,6 @@
   }
   .section__skils {
     border-radius: 0px;
-    font-size: 0.62rem;
   }
   .section__scroll {
     mask-size: 65px;
@@ -93,7 +96,15 @@
 }
 @media (max-width: 400px) {
   .section__grid {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     border-radius: 0;
+  }
+  .section__skils {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 310px) {
+  .section__skils {
+    font-size: 0.75rem;
   }
 }

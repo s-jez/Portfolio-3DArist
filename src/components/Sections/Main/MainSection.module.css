@@ -102,6 +102,10 @@
   mask-size: 80px;
   background-color: white;
   mask-repeat: no-repeat;
+  transition: transform 0.3s ease;
+}
+.main__scroll:hover {
+  transform: translateY(10px);
 }
 h1 {
   font-size: 3rem;
