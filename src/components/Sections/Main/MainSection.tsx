@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import styles from "./MainSection.module.css";
 
-import linkedin from "../../../assets/linkedin.webp";
-import instagram from "../../../assets/instagram.webp";
-import artstation from "../../../assets/artstation.webp";
+import linkedin from "assets/linkedin.webp";
+import instagram from "assets/instagram.webp";
+import artstation from "assets/artstation.webp";
 import { Link } from "react-router-dom";
 
 const MainSection = () => {

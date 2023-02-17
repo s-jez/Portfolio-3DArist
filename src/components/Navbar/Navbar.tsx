@@ -1,11 +1,10 @@
 import { useState, useRef, useEffect } from "react";
-import useOnClickOutside from "../../hooks/useOnClickOutside";
+import useOnClickOutside from "hooks/useOnClickOutside";
 import styles from "./Navbar.module.css";
 
-import linkedin from "../../assets/linkedin.webp";
-import instagram from "../../assets/instagram.webp";
-import artstation from "../../assets/artstation.webp";
-import React from "react";
+import linkedin from "assets/linkedin.webp";
+import instagram from "assets/instagram.webp";
+import artstation from "assets/artstation.webp";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {

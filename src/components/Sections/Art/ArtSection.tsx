@@ -1,5 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import styles from "./ArtSection.module.css";
-import Arrows from "../../Carousel/Arrows/Arrows";
+import Arrows from "components/Carousel/Arrows/Arrows";
 import { useEffect, useState, useRef } from "react";
 
 interface Image {
