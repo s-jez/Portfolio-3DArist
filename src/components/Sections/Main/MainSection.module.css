@@ -92,22 +92,6 @@
   text-shadow: -1px 20px #676767, 1px -1px #676767, -0px 1px #676767,
     1px 1px #676767;
 }
-.main__scroll {
-  position: absolute;
-  width: 5rem;
-  height: 5rem;
-  bottom: 5%;
-  right: 5%;
-  cursor: pointer;
-  mask-image: url("../../../assets/circle-down.svg");
-  mask-size: 80px;
-  background-color: white;
-  mask-repeat: no-repeat;
-  transition: transform 0.3s ease;
-}
-.main__scroll:hover {
-  transform: translateY(10px);
-}
 h1 {
   font-size: 3rem;
   padding: 0 3rem;
@@ -185,9 +169,6 @@ h1 {
   .main__info {
     width: 100%;
     margin: auto;
-  }
-  .main__scroll {
-    mask-size: 65px;
   }
   .main__button {
     width: 17rem;

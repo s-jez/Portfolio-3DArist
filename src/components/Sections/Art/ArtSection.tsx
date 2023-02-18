@@ -20,11 +20,6 @@ const ArtSection = () => {
         </div>
       </div>
       <Slider />
-      <a
-        className={styles["section__scroll"]}
-        href="#contact"
-        aria-label="scroll arrow"
-      ></a>
     </section>
   );
 };

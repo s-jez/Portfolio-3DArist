@@ -15,22 +15,6 @@
   color: white;
   margin: 2rem 0;
 }
-.section__scroll {
-  position: absolute;
-  cursor: pointer;
-  width: 5rem;
-  height: 5rem;
-  bottom: 5%;
-  right: 5%;
-  mask-image: url("../../../assets/circle-down.svg");
-  mask-size: 80px;
-  background-color: white;
-  mask-repeat: no-repeat;
-  transition: transform 0.3s ease;
-}
-.section__scroll:hover {
-  transform: translateY(10px);
-}
 .section__block {
   position: absolute;
   right: 65%;
@@ -97,9 +81,6 @@
   .section__block {
     width: 100%;
     right: 0;
-  }
-  .section__scroll {
-    mask-size: 65px;
   }
 }
 @media (max-width: 360px) {

@@ -63,24 +63,6 @@
   height: 2.5rem;
   cursor: pointer;
 }
-.form__scroll {
-  width: 5rem;
-  height: 5rem;
-  position: absolute;
-  bottom: 5%;
-  right: 5%;
-  cursor: pointer;
-  mask-image: url("../../../assets/circle-down.svg");
-  mask-size: 80px;
-  rotate: 180deg;
-  background-color: white;
-  mask-repeat: no-repeat;
-  position: absolute;
-  transition: transform 0.3s ease;
-}
-.form__scroll:hover {
-  transform: translateY(10px);
-}
 @media (max-width: 1020px) {
   .form {
     display: flex;
@@ -103,9 +85,6 @@
   }
   .form {
     width: 100%;
-  }
-  .form__scroll {
-    mask-size: 65px;
   }
 }
 @media (max-width: 320px) {

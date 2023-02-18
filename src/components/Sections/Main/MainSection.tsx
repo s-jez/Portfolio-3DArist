@@ -56,11 +56,6 @@ const MainSection = () => {
           </Link>
         </div>
       </div>
-      <a
-        className={styles["main__scroll"]}
-        aria-label="scroll arrow"
-        href="#skills"
-      ></a>
     </div>
   );
 };

@@ -46,9 +46,6 @@ const FormSection = () => {
           </div>
         </form>
       </div>
-      <a aria-label="scroll arrow" href="#App">
-        <div className={styles["form__scroll"]}></div>
-      </a>
     </section>
   );
 };

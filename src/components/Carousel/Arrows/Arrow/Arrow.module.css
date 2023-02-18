@@ -1,0 +1,21 @@
+.arrow {
+  position: absolute;
+  cursor: pointer;
+  width: 5rem;
+  height: 5rem;
+  bottom: 5%;
+  right: 5%;
+  mask-image: url("../../../../assets/circle-down.svg");
+  mask-size: 80px;
+  background-color: white;
+  mask-repeat: no-repeat;
+  transition: transform 0.3s ease;
+}
+.arrow:hover {
+  transform: translateY(10px);
+}
+@media (max-width: 600px) {
+  .arrow {
+    mask-size: 65px;
+  }
+}
