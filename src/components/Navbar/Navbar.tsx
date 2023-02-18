@@ -38,7 +38,7 @@ const Navbar = () => {
             <a href="#App">Wiktoria Skórek</a>
           </span>
         </li>
-        <li className={styles["nav-items"]}>
+        <div className={styles["nav-items"]}>
           <li className={styles["nav-item"]}>
             <Link to="/portfolio" className={styles["nav-link"]}>
               Portfolio
@@ -57,7 +57,7 @@ const Navbar = () => {
           <li className={styles["nav-item"]}>
             <div className={styles["nav-language"]}></div>
           </li>
-        </li>
+        </div>
         <li className={styles["mobile-nav"]}>
           <a href="#App" className={styles["nav-logo"]}>
             &#x200b;

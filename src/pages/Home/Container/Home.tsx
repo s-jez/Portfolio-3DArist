@@ -19,8 +19,8 @@ const Home = () => {
         <SkillsSection />
         <ArtSection />
         <FormSection />
-        <Arrow />
       </section>
+      <Arrow />
       <Footer />
     </div>
   );

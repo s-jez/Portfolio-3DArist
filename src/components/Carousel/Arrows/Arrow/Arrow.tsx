@@ -30,7 +30,7 @@ const Arrow = () => {
     return () => {
       window.removeEventListener("scroll", checkSectionInView);
     };
-  }, [sections]);
+  }, []);
 
   const handleClick = (): void => {
     const nextIndex = (sectionIndex + 1) % sections.length;
