@@ -173,6 +173,10 @@
 .menu__icons {
   margin-top: 1rem;
 }
+.overlay {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.45);
+}
 @media (max-width: 1100px) {
   .nav-title {
     white-space: nowrap;

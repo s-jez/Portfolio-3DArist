@@ -71,47 +71,49 @@ const Navbar = () => {
             <div className={styles.line}></div>
           </div>
         </li>
-        {isMobile && (
-          <li className={isOpen ? styles["menu-active"] : styles["menu"]}>
-            <div className={styles["menu-burger"]} onClick={openMenu}>
-              <div className={styles.line}></div>
-            </div>
-            <Link to="/portfolio" onClick={openMenu}>
-              Portfolio
-            </Link>
-            <Link to="/blog" onClick={openMenu}>
-              Blog
-            </Link>
-            <a href="#contact" onClick={openMenu}>
-              Contact
-            </a>
-            <div className={styles["menu__icons"]}>
-              <a
-                href="https://www.linkedin.com/in/wiktoria-sk%C3%B3rek/"
-                target="_blank"
-                rel="noreferrer"
-                className={styles["main__social"]}
-              >
-                <img src={linkedin} width={80} alt="linkedin" />
+        {isMobile && isOpen && (
+          <div className={styles.overlay} onClick={openMenu}>
+            <li className={isOpen ? styles["menu-active"] : styles["menu"]}>
+              <div className={styles["menu-burger"]} onClick={openMenu}>
+                <div className={styles.line}></div>
+              </div>
+              <Link to="/portfolio" onClick={openMenu}>
+                Portfolio
+              </Link>
+              <Link to="/blog" onClick={openMenu}>
+                Blog
+              </Link>
+              <a href="#contact" onClick={openMenu}>
+                Contact
               </a>
-              <a
-                href="https://www.instagram.com/kosiawr/"
-                rel="noreferrer"
-                target="_blank"
-                className={styles["main__social"]}
-              >
-                <img src={instagram} width={80} alt="instagram" />
-              </a>
-              <a
-                href="https://www.artstation.com/wiktoria_skorek"
-                rel="noreferrer"
-                target="_blank"
-                className={styles["main__social"]}
-              >
-                <img src={artstation} width={80} alt="artstation" />
-              </a>
-            </div>
-          </li>
+              <div className={styles["menu__icons"]}>
+                <a
+                  href="https://www.linkedin.com/in/wiktoria-sk%C3%B3rek/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={styles["main__social"]}
+                >
+                  <img src={linkedin} width={80} alt="linkedin" />
+                </a>
+                <a
+                  href="https://www.instagram.com/kosiawr/"
+                  rel="noreferrer"
+                  target="_blank"
+                  className={styles["main__social"]}
+                >
+                  <img src={instagram} width={80} alt="instagram" />
+                </a>
+                <a
+                  href="https://www.artstation.com/wiktoria_skorek"
+                  rel="noreferrer"
+                  target="_blank"
+                  className={styles["main__social"]}
+                >
+                  <img src={artstation} width={80} alt="artstation" />
+                </a>
+              </div>
+            </li>
+          </div>
         )}
       </ul>
     </nav>
