@@ -1,7 +1,14 @@
+import { Container } from "@mui/system";
+import Navbar from "components/Navbar/Navbar";
 import React from "react";
 
 const Portfolio = () => {
-  return <h1 style={{ color: "white" }}>Witaj w portfolio!</h1>;
+  return (
+    <>
+      <Navbar />
+      <Container></Container>
+    </>
+  );
 };
 
 export default Portfolio;
