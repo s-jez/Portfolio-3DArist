@@ -6,6 +6,7 @@ import linkedin from "assets/linkedin.webp";
 import instagram from "assets/instagram.webp";
 import artstation from "assets/artstation.webp";
 import { Link } from "react-router-dom";
+import Hamburger from "hamburger-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -62,21 +63,19 @@ const Navbar = () => {
           <a href="#App" className={styles["nav-logo"]}>
             &#x200b;
           </a>
-          <div
-            className={!isOpen ? styles["hamburger-menu"] : ""}
-            onClick={openMenu}
-          >
-            <div className={styles.line}></div>
-            <div className={styles.line}></div>
-            <div className={styles.line}></div>
+          <div className={styles.hamburger}>
+            <Hamburger
+              rounded
+              onToggle={openMenu}
+              toggled={isOpen}
+              size={32}
+              color="white"
+            />
           </div>
         </li>
         {isMobile && isOpen && (
           <div className={styles.overlay} onClick={openMenu}>
             <li className={isOpen ? styles["menu-active"] : styles["menu"]}>
-              <div className={styles["menu-burger"]} onClick={openMenu}>
-                <div className={styles.line}></div>
-              </div>
               <Link to="/portfolio" onClick={openMenu} className={styles.link}>
                 Portfolio
               </Link>
