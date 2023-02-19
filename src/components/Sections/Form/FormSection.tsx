@@ -1,4 +1,5 @@
 import { Button, TextField } from "@mui/material";
+import Arrow from "components/Carousel/Arrows/Arrow/Arrow";
 import styles from "./FormSection.module.css";
 
 const FormSection = () => {
@@ -46,6 +47,7 @@ const FormSection = () => {
           </div>
         </form>
       </div>
+      <Arrow direction="up" />
     </section>
   );
 };

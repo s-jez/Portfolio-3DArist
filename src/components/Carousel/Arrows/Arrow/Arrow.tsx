@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
 import styles from "./Arrow.module.css";
 
-const Arrow = () => {
+interface IArrow {
+  direction?: string;
+}
+
+const Arrow = ({ direction = "down" }: IArrow) => {
   const [sectionIndex, setSectionIndex] = useState<number>(0);
   const [sections, setSections] = useState<HTMLElement[]>([]);
 
@@ -40,7 +44,12 @@ const Arrow = () => {
       nextSection.scrollIntoView({ behavior: "smooth" });
     }
   };
-  return <div className={styles.arrow} onClick={handleClick}></div>;
+  return (
+    <div
+      className={direction === "down" ? styles.arrow : styles.arrowUp}
+      onClick={handleClick}
+    ></div>
+  );
 };
 
 export default Arrow;

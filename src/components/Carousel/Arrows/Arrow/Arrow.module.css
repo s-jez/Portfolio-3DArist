@@ -1,4 +1,5 @@
-.arrow {
+.arrow,
+.arrowUp {
   position: absolute;
   cursor: pointer;
   width: 5rem;
@@ -11,7 +12,11 @@
   mask-repeat: no-repeat;
   transition: transform 0.3s ease;
 }
-.arrow:hover {
+.arrowUp {
+  rotate: 180deg;
+}
+.arrow:hover,
+.arrowUp:hover {
   transform: translateY(10px);
 }
 @media (max-width: 600px) {
