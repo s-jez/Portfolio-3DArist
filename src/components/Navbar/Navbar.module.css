@@ -154,7 +154,7 @@
 .menu-active a > img {
   width: 3rem;
 }
-.menu-active a::after {
+.menu-active .link::after {
   content: "";
   position: absolute;
   display: block;
@@ -166,7 +166,7 @@
   background: #fff;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
-.menu-active a:hover::after {
+.menu-active .link:hover::after {
   width: 90%;
   left: 0;
 }

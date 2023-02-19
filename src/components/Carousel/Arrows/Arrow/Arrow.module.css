@@ -20,7 +20,8 @@
   transform: translateY(10px);
 }
 @media (max-width: 600px) {
-  .arrow {
+  .arrow,
+  .arrowUp {
     mask-size: 65px;
   }
 }

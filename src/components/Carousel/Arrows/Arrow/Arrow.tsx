@@ -12,6 +12,7 @@ const Arrow = ({ direction = "down" }: IArrow) => {
   useEffect(() => {
     // Get all the sections on the page
     const sections = document.querySelectorAll("section");
+    console.log(sections);
     setSections(Array.from(sections));
     // Check which section is currently in view
     const checkSectionInView = (): void => {

@@ -77,13 +77,13 @@ const Navbar = () => {
               <div className={styles["menu-burger"]} onClick={openMenu}>
                 <div className={styles.line}></div>
               </div>
-              <Link to="/portfolio" onClick={openMenu}>
+              <Link to="/portfolio" onClick={openMenu} className={styles.link}>
                 Portfolio
               </Link>
-              <Link to="/blog" onClick={openMenu}>
+              <Link to="/blog" onClick={openMenu} className={styles.link}>
                 Blog
               </Link>
-              <a href="#contact" onClick={openMenu}>
+              <a href="#contact" onClick={openMenu} className={styles.link}>
                 Contact
               </a>
               <div className={styles["menu__icons"]}>
