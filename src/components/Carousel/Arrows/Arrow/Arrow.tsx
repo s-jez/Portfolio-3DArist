@@ -12,17 +12,13 @@ const Arrow = ({ direction = "down" }: IArrow) => {
   useEffect(() => {
     // Get all the sections on the page
     const sections = Array.from(document.querySelectorAll("section"));
-    const header = document.querySelector("header");
-    if (header) {
-      setSections([header, ...sections]);
-    } else {
-      setSections(sections);
-    }
+    setSections(sections);
     // Check which section is currently in view
     const checkSectionInView = (): void => {
       let currentIndex = 0;
       for (let i = 0; i < sections.length; i++) {
         const section = sections[i];
+        // Skip over header element
         const rect = section.getBoundingClientRect();
         if (
           rect.top <= window.innerHeight / 2 &&
@@ -34,6 +30,7 @@ const Arrow = ({ direction = "down" }: IArrow) => {
       }
       setSectionIndex(currentIndex);
     };
+
     window.addEventListener("scroll", checkSectionInView);
     checkSectionInView();
     return () => {
@@ -42,11 +39,21 @@ const Arrow = ({ direction = "down" }: IArrow) => {
   }, []);
 
   const handleClick = (): void => {
-    const nextIndex = (sectionIndex + 1) % sections.length;
-    setSectionIndex(nextIndex);
-    const nextSection = sections[nextIndex];
-    if (nextSection) {
-      nextSection.scrollIntoView({ behavior: "smooth" });
+    const nextIndex = sectionIndex + 1;
+    if (nextIndex < sections.length) {
+      // Navigate to the next section
+      setSectionIndex(nextIndex);
+      const nextSection = sections[nextIndex];
+      if (nextSection) {
+        nextSection.scrollIntoView({ behavior: "smooth" });
+      }
+    } else if (nextIndex === sections.length) {
+      // Navigate to the first section
+      setSectionIndex(0);
+      const firstSection = sections[0];
+      if (firstSection) {
+        firstSection.scrollIntoView({ behavior: "smooth" });
+      }
     }
   };
   return (

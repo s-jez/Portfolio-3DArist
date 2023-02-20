@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const MainSection = () => {
   return (
-    <div className={styles.main}>
+    <section className={styles.main}>
       <div className={styles["main__info"]}>
         <div className={styles["main__header"]}>
           <div className={styles["main__hello"]}>
@@ -56,7 +56,7 @@ const MainSection = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
