@@ -23,5 +23,6 @@
   .arrow,
   .arrowUp {
     mask-size: 65px;
+    bottom: 2.5%;
   }
 }

@@ -104,9 +104,6 @@ h1 {
   }
 }
 @media (max-width: 1440px) {
-  .main__hello {
-    font-size: 8rem;
-  }
   h1 {
     font-size: 2rem;
   }
@@ -120,7 +117,7 @@ h1 {
 }
 @media (max-width: 1020px) {
   .main__hello {
-    font-size: 8.5rem;
+    font-size: 10rem;
   }
   h1 {
     font-size: 2rem;
@@ -164,7 +161,7 @@ h1 {
     height: 60px;
   }
   .main__hello {
-    font-size: 8.5rem;
+    font-size: 9.5rem;
   }
   .main__info {
     width: 100%;
@@ -186,7 +183,7 @@ h1 {
 }
 @media (max-height: 800px) {
   .main__hello {
-    font-size: 6rem;
+    font-size: 7.5rem;
   }
   .main {
     padding: 27rem 0;
@@ -197,7 +194,7 @@ h1 {
     font-size: 2rem;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 500px) {
   .main {
     padding: 23.5rem 0;
   }
@@ -214,7 +211,7 @@ h1 {
     width: 55px;
   }
   .main__hello {
-    font-size: 8rem;
+    font-size: 7.75rem;
   }
   .main__artist {
     font-size: 2.75rem;
