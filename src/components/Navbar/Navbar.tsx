@@ -34,7 +34,9 @@ const Navbar = () => {
     <nav className={styles.nav} ref={node}>
       <ul>
         <li className={styles["nav-title"]}>
-          <div className={styles["nav-logo"]}></div>
+          <Link to="/">
+            <div className={styles["nav-logo"]}></div>
+          </Link>
           <span className={styles["nav-title__artist"]}>
             <a href="#App">Wiktoria Skórek</a>
           </span>
@@ -60,9 +62,9 @@ const Navbar = () => {
           </li>
         </div>
         <li className={styles["mobile-nav"]}>
-          <a href="#App" className={styles["nav-logo"]}>
+          <Link to="/" className={styles["nav-logo"]}>
             &#x200b;
-          </a>
+          </Link>
           <div className={styles.hamburger}>
             <Hamburger
               rounded

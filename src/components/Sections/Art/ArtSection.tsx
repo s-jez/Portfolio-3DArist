@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import styles from "./ArtSection.module.css";
 import Slider from "components/Carousel/Slider/Slider";
+import { Link } from "react-router-dom";
 
 const ArtSection = () => {
   return (
@@ -16,7 +17,10 @@ const ArtSection = () => {
         </p>
         <div className={styles["section__more"]}>
           <span>Zobacz wiecej</span>
-          <button>BLOG</button>
+          <Link to="/blog">
+            {" "}
+            <button>Blog</button>
+          </Link>
         </div>
       </div>
       <Slider />
