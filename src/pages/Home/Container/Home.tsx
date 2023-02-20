@@ -15,11 +15,11 @@ const Home = () => {
       <header className="App-header">
         <MainSection />
       </header>
-      <section className="App-container" role="main">
+      <main className="App-container" role="main">
         <SkillsSection />
         <ArtSection />
         <FormSection />
-      </section>
+      </main>
       <Arrow />
       <Footer />
     </div>
