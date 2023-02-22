@@ -42,12 +42,12 @@ const blogPosts: BlogPost[] = [
 
 const Blog = () => {
   return (
-    <>
+    <div id="#App">
       <Navbar />
       <Container style={{ paddingTop: "5rem" }}>
         <BlogCards blogPosts={blogPosts} />
       </Container>
-    </>
+    </div>
   );
 };
 
