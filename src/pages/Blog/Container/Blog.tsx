@@ -4,6 +4,7 @@ import React from "react";
 import BlogCards from "../Card/Container/BlogCards";
 
 import image from "../../../assets/shiba.jpeg";
+import SearchBar from "../Card/SearchBar/SearchBar";
 
 export interface BlogPost {
   id: number;
@@ -45,6 +46,7 @@ const Blog = () => {
     <div id="#App">
       <Navbar />
       <Container style={{ paddingTop: "5rem" }}>
+        <SearchBar />
         <BlogCards blogPosts={blogPosts} />
       </Container>
     </div>
