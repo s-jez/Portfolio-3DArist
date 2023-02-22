@@ -113,15 +113,6 @@
   z-index: 10;
   border-radius: 50%;
 }
-.menu-burger {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 4rem;
-  height: 4rem;
-  cursor: pointer;
-}
 .menu {
   display: none;
   width: 270px;
@@ -227,6 +218,10 @@
   }
   .nav ul {
     display: block;
+  }
+  .menu-active a > img {
+    border-radius: 1.25rem;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.25));
   }
 }
 @media (max-height: 600px) {
