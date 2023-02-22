@@ -1,7 +1,12 @@
 import { BlogPost } from "../Container/Blog";
 import styles from "./BlogCard.module.css";
+import { useNavigate } from "react-router-dom";
 
 const BlogCard = ({ id, image, title, date, description }: BlogPost) => {
+  const navigate = useNavigate();
+  const handleClick = (id: number) => {
+    navigate(`/blog/post/${id}`);
+  };
   return (
     <div className={styles["card"]} key={id}>
       <img src={image} className={styles["card__img"]} alt={title} />
