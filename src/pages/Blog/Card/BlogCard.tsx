@@ -1,12 +1,15 @@
 import { BlogPost } from "../Container/Blog";
 import styles from "./BlogCard.module.css";
 
-const BlogCard = ({ id, title, date, description }: BlogPost) => {
+const BlogCard = ({ id, image, title, date, description }: BlogPost) => {
   return (
-    <div className={styles["blog__card"]} key={id}>
-      <h3>{title}</h3>
-      <span>{date}</span>
-      <p>{description}</p>
+    <div className={styles["card"]} key={id}>
+      <img src={image} className={styles["card__img"]} alt={title} />
+      <h3 className={styles["card__title"]}>{title}</h3>
+      <div className={styles["card__article"]}>
+        <span className={styles["card__date"]}>{date}</span>
+        <p className={styles["card__description"]}>{description}</p>
+      </div>
     </div>
   );
 };
