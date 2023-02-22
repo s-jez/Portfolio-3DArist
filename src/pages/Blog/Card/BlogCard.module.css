@@ -8,7 +8,8 @@
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
   margin: 1rem;
 }
-.card__img {
+.card__img,
+.full-card__img {
   display: block;
   width: 18rem;
   height: 16rem;
@@ -22,6 +23,7 @@
   text-align: center;
   font-family: "Merienda One";
   font-weight: 400;
+  color: white;
 }
 .card__article {
   margin: 0 1rem;
@@ -37,4 +39,25 @@
   color: rgba(204, 204, 204, 0.9);
   text-align: center;
   font-size: 0.875rem;
+}
+.full-card {
+  width: 80%;
+  display: flex;
+  margin: 5rem;
+  padding: 5rem 0;
+  background: #454545;
+}
+.full-card__article {
+  padding-top: 5rem;
+}
+@media (max-width: 700px) {
+  .full-card {
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 10rem 0;
+  }
+  .full-card__img {
+    width: 90%;
+  }
 }
