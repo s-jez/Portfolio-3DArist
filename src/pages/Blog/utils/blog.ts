@@ -1,4 +1,4 @@
-import image from "../../../assets/shiba.jpeg";
+import image from "assets/shiba.jpeg";
 
 export interface BlogPost {
   id: number;

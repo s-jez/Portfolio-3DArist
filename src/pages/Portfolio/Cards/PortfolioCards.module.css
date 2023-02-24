@@ -1,0 +1,7 @@
+.portfolio-container {
+  padding-top: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+}
