@@ -8,7 +8,11 @@ import artstation from "assets/artstation.webp";
 import { Link } from "react-router-dom";
 import Hamburger from "hamburger-react";
 
-const Navbar = () => {
+interface INavbar {
+  isSubPage: boolean;
+}
+
+const Navbar = ({ isSubPage }: INavbar) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const [isMobile, setIsMobile] = useState(true);
@@ -42,6 +46,13 @@ const Navbar = () => {
           </span>
         </li>
         <div className={styles["nav-items"]}>
+          {isSubPage && (
+            <li className={styles["nav-item"]}>
+              <Link to="/" className={styles["nav-link"]}>
+                Home
+              </Link>
+            </li>
+          )}
           <li className={styles["nav-item"]}>
             <Link to="/portfolio" className={styles["nav-link"]}>
               Portfolio
@@ -52,11 +63,13 @@ const Navbar = () => {
               Blog
             </Link>
           </li>
-          <li className={styles["nav-item"]}>
-            <a href="#contact" className={styles["nav-link"]}>
-              Contact
-            </a>
-          </li>
+          {!isSubPage && (
+            <li className={styles["nav-item"]}>
+              <a href="#contact" className={styles["nav-link"]}>
+                Contact
+              </a>
+            </li>
+          )}
           <li className={styles["nav-item"]}>
             <div className={styles["nav-language"]}></div>
           </li>

@@ -5,7 +5,7 @@ import React from "react";
 const Portfolio = () => {
   return (
     <>
-      <Navbar />
+      <Navbar isSubPage={true} />
       <Container></Container>
     </>
   );

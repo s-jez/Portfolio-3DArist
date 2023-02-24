@@ -8,7 +8,7 @@ import { blogPosts } from "../utils/blog";
 const Blog = () => {
   return (
     <div id="#App">
-      <Navbar />
+      <Navbar isSubPage={true} />
       <Container style={{ paddingTop: "5rem" }}>
         <SearchBar />
         <BlogCards blogPosts={blogPosts} id="" />

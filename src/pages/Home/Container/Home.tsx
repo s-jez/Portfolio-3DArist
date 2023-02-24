@@ -11,7 +11,7 @@ import Arrow from "components/Carousel/Arrows/Arrow/Arrow";
 const Home = () => {
   return (
     <div className="App" id="App">
-      <Navbar />
+      <Navbar isSubPage={false} />
       <header className="App-header">
         <MainSection />
       </header>

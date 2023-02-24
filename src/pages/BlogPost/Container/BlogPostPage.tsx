@@ -9,7 +9,7 @@ const BlogPostPage = () => {
 
   return (
     <div id="App">
-      <Navbar />
+      <Navbar isSubPage={true} />
       <Container style={{ paddingTop: "5rem" }}>
         <BlogCards id={id?.toString()} blogPosts={blogPosts} />
       </Container>
