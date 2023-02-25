@@ -100,6 +100,7 @@ const Navbar = ({ isSubPage }: INavbar) => {
               <a href="#contact" onClick={openMenu} className={styles.link}>
                 Contact
               </a>
+              <div className={styles["nav-language"]}></div>
               <div className={styles["menu__icons"]}>
                 <a
                   href="https://www.linkedin.com/in/wiktoria-sk%C3%B3rek/"

@@ -95,6 +95,7 @@
   font-size: 11rem;
   font-weight: 400;
   white-space: nowrap;
+  height: 14rem;
 }
 .main__hello span {
   display: inline-block;
@@ -111,13 +112,13 @@
 }
 .main__artist {
   font-family: "Changa One";
-  font-size: 5.5rem;
+  font-size: 4.5rem;
   line-height: 100px;
   font-weight: 400;
-  margin-left: -5.5rem;
+  margin-left: -4rem;
 }
 .main__artist > :first-child {
-  text-shadow: -1px 20px #676767, 1px -1px #676767, -0px 1px #676767,
+  text-shadow: -1px 20px #676767, 2px -1px #676767, -0px 1px #676767,
     1px 1px #676767;
 }
 h1 {

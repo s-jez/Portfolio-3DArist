@@ -72,7 +72,7 @@
   align-items: center;
   margin: 0 0.5rem;
   border-radius: 15px;
-  border: 3px solid #ffffff;
+  border: 4px solid rgba(255, 255, 255, 0.3);
 }
 .nav-circle {
   width: 3.5rem;
@@ -81,11 +81,15 @@
   background: #474747;
 }
 .nav-language {
-  width: 5rem;
+  width: 6rem;
   height: 3rem;
   color: white;
-  border: 3px solid #ffffff;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.46);
   border-radius: 15px;
+  padding: 1rem;
+  margin: 1rem 0;
+  cursor: pointer;
 }
 .mobile-nav {
   display: none;
@@ -126,6 +130,7 @@
   position: absolute;
   top: 0;
   right: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -135,10 +140,11 @@
   height: 200px;
   background: rgba(41, 41, 41, 0.92);
   border-radius: 0px 0px 0px 30px;
-  padding: 12.5rem 0rem;
+  padding: 13rem 0rem 11.5rem 0rem;
   transform: translateX(0);
   box-shadow: -10px 10px 7px rgba(0, 0, 0, 0.25);
 }
+
 .menu-active a > img {
   width: 3rem;
 }
@@ -164,6 +170,7 @@
 .overlay {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.45);
+  transition: all 0.3s;
 }
 @media (max-width: 1100px) {
   .nav-title {
@@ -203,7 +210,7 @@
     justify-content: space-between;
   }
   .nav a {
-    font-size: 1.8rem;
+    font-size: 1.75rem;
     margin: 0rem;
   }
   .menu-burger {

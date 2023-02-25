@@ -13,7 +13,7 @@ const MainSection = () => {
         <div className={styles["main__header"]}>
           <div className={styles["main__hello"]}>
             <span>H</span>
-            <span>I</span>
+            <span>i</span>
             <span>!</span>
           </div>
           <div>
@@ -30,7 +30,7 @@ const MainSection = () => {
               rel="noreferrer"
               className={styles["main__social"]}
             >
-              <img src={linkedin} width={70} height={70} alt="linkedin" />
+              <img src={linkedin} width={74} height={74} alt="linkedin" />
             </a>
             <a
               href="https://www.instagram.com/kosiawr/"
@@ -38,7 +38,7 @@ const MainSection = () => {
               target="_blank"
               className={styles["main__social"]}
             >
-              <img src={instagram} width={70} height={70} alt="instagram" />
+              <img src={instagram} width={74} height={74} alt="instagram" />
             </a>
             <a
               href="https://www.artstation.com/wiktoria_skorek"
@@ -46,7 +46,7 @@ const MainSection = () => {
               target="_blank"
               className={styles["main__social"]}
             >
-              <img src={artstation} width={70} height={70} alt="artstation" />
+              <img src={artstation} width={74} height={74} alt="artstation" />
             </a>
           </div>
         </div>
