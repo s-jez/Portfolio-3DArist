@@ -19,8 +19,9 @@
 }
 @media (max-width: 600px) {
   .slider {
-    width: 100%;
-    margin-top: 32.5rem;
+    width: 90%;
+    border-radius: 12.5px;
+    margin-top: 35.5rem;
   }
 }
 @media (max-width: 320px) {

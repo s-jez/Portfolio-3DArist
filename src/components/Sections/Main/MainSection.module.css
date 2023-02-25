@@ -213,6 +213,7 @@ h1 {
 @media (max-height: 800px) {
   .main__hello {
     font-size: 7.5rem;
+    height: 10rem;
   }
   .main {
     padding: 27rem 0;
