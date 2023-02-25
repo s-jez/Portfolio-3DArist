@@ -11,7 +11,7 @@
   padding: 12.5rem 0;
 }
 .section__art h3 {
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   color: white;
   margin: 2rem 0;
 }
@@ -27,7 +27,7 @@
   padding: 4rem 0.5rem;
 }
 .section__block h4 {
-  font-size: 2.5rem;
+  font-size: 2.65rem;
   text-align: center;
   color: white;
   margin: 2rem 0;
@@ -82,6 +82,9 @@
   .section__block {
     width: 100%;
     right: 0;
+  }
+  .section__art h3 {
+    font-size: 3rem;
   }
 }
 @media (max-width: 360px) {
