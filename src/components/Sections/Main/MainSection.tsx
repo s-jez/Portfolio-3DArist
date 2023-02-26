@@ -5,8 +5,10 @@ import linkedin from "assets/linkedin.webp";
 import instagram from "assets/instagram.webp";
 import artstation from "assets/artstation.webp";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const MainSection = () => {
+  const { t } = useTranslation();
   return (
     <section className={styles.main}>
       <div className={styles["main__info"]}>
@@ -17,7 +19,7 @@ const MainSection = () => {
             <span>!</span>
           </div>
           <div>
-            <h1>I am Wiktoria</h1>
+            <h1> {t("home.header.title")}</h1>
           </div>
           <div className={styles["main__artist"]}>
             <span>3D </span>

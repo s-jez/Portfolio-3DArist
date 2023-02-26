@@ -1,0 +1,22 @@
+{
+  "header": {
+    "title": "To ja Wiktoria"
+  },
+  "skills": {
+    "title": "Umiejetnosci"
+  },
+  "art": {
+    "title": "Moje prace",
+    "question": "Madre pytanie?",
+    "text": "",
+    "more": "Zobacz wiecej"
+  },
+  "form": {
+    "title": "Zapytaj mnie!",
+    "email": "Twoj e-mail..",
+    "name": "Twoja nazwa..",
+    "topic": "Twoj temat..",
+    "msg": "Twoja wiadomosc..",
+    "btn": "Wyslij"
+  }
+}

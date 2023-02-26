@@ -1,0 +1,22 @@
+{
+  "header": {
+    "title": "I am Wiktoria"
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "art": {
+    "title": "Art",
+    "question": "Do you have question?",
+    "text": "",
+    "more": "Show more"
+  },
+  "form": {
+    "title": "Ask me!",
+    "email": "Your e-mail..",
+    "name": "Your name..",
+    "topic": "Your topic..",
+    "msg": "Your message..",
+    "btn": "Send"
+  }
+}

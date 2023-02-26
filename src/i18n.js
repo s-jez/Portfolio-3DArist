@@ -1,15 +1,25 @@
 import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
-import plTranslation from "./locales/pl.json";
-import enTranslation from "./locales/en.json";
+
+import plNavbarTranslation from "./locales/pl/navbar.json";
+import plHomePlTranslation from "./locales/pl/home.json";
+
+import enNavbarTranslation from "./locales/en/navbar.json";
+import enHomePlTranslation from "./locales/en/home.json";
 
 const resources = {
   pl: {
-    translation: plTranslation,
+    translation: {
+      home: plHomePlTranslation,
+      navbar: plNavbarTranslation,
+    },
   },
   en: {
-    translation: enTranslation,
+    translation: {
+      home: enHomePlTranslation,
+      navbar: enNavbarTranslation,
+    },
   },
 };
 
