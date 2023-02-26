@@ -7,12 +7,15 @@ import instagram from "assets/instagram.webp";
 import artstation from "assets/artstation.webp";
 import { Link } from "react-router-dom";
 import Hamburger from "hamburger-react";
+import { useTranslation } from "react-i18next";
+import LanguageSwitch from "components/SwitchLanguage/LanguageSwitch";
 
 interface INavbar {
   isSubPage: boolean;
 }
 
 const Navbar = ({ isSubPage }: INavbar) => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
   const [isMobile, setIsMobile] = useState(true);
@@ -49,29 +52,35 @@ const Navbar = ({ isSubPage }: INavbar) => {
           {isSubPage && (
             <li className={styles["nav-item"]}>
               <Link to="/" className={styles["nav-link"]}>
-                Home
+                {t("navbar.home")}
               </Link>
             </li>
           )}
           <li className={styles["nav-item"]}>
             <Link to="/portfolio" className={styles["nav-link"]}>
-              Portfolio
+              {t("navbar.portfolio")}
             </Link>
           </li>
           <li className={styles["nav-item"]}>
             <Link to="/blog" className={styles["nav-link"]}>
-              Blog
+              {t("navbar.blog")}
             </Link>
           </li>
           {!isSubPage && (
             <li className={styles["nav-item"]}>
               <a href="#contact" className={styles["nav-link"]}>
-                Contact
+                {t("navbar.contact")}
               </a>
             </li>
           )}
           <li className={styles["nav-item"]}>
-            <div className={styles["nav-language"]}></div>
+            <div className={styles["nav-language"]}>
+              <LanguageSwitch
+                onChangeLanguage={(lang) =>
+                  console.log(`Language changed to ${lang}`)
+                }
+              />
+            </div>
           </li>
         </div>
         <li className={styles["mobile-nav"]}>
