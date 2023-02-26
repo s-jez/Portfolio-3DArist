@@ -2,7 +2,8 @@
 Link to website: **https://portfolio-3-d-arist.vercel.app/**
 
 ## Technologies
-- JavaScript (React.JS)
-- TypeScript
+- React.JS
+- JavaScript/TypeScript
+- I18next (Page translation)
 - CSS Modules
 - HTML
