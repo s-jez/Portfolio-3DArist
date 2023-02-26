@@ -1,8 +1,10 @@
 import { Button, TextField } from "@mui/material";
 import Arrow from "components/Carousel/Arrows/Arrow/Arrow";
 import styles from "./FormSection.module.css";
+import { useTranslation } from "react-i18next";
 
 const FormSection = () => {
+  const { t } = useTranslation();
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
   };
@@ -10,27 +12,27 @@ const FormSection = () => {
     <section className={styles["form__section"]} id="contact">
       <div className={styles.gif}></div>
       <div className={styles.form}>
-        <h3>Ask me!</h3>
+        <h3>{t("home.form.title")}</h3>
         <form action="" onSubmit={handleSubmit}>
           <div className={styles["form-inputs"]}>
             <TextField
               id="outlined-basic"
-              label="Your e-mail.."
+              label={t("home.form.email")}
               variant="outlined"
             />
             <TextField
               id="outlined-basic"
-              label="Your name.."
+              label={t("home.form.name")}
               variant="outlined"
             />
             <TextField
               id="outlined-basic"
-              label="Your topic.."
+              label={t("home.form.topic")}
               variant="outlined"
             />
             <TextField
               id="outlined-basic"
-              label="Message.."
+              label={t("home.form.msg")}
               variant="outlined"
               multiline
             />
@@ -42,7 +44,7 @@ const FormSection = () => {
               className={styles["btn-correct"]}
               size="medium"
             >
-              Send
+              {t("home.form.btn")}
             </Button>
           </div>
         </form>

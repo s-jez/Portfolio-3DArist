@@ -1,15 +1,10 @@
 import { FC, ChangeEvent } from "react";
 import { useTranslation } from "react-i18next";
 
-type LanguageSwitchProps = {
-  onChangeLanguage: (lang: string) => void;
-};
-
-const LanguageSwitch: FC<LanguageSwitchProps> = ({ onChangeLanguage }) => {
+const LanguageSwitch = () => {
   const { i18n } = useTranslation();
 
   const handleLanguageChange = (event: ChangeEvent<HTMLSelectElement>) => {
-    onChangeLanguage(event.target.value);
     i18n.changeLanguage(event.target.value);
   };
 

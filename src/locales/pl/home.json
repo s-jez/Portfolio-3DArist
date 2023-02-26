@@ -8,7 +8,8 @@
   "art": {
     "title": "Moje prace",
     "question": "Madre pytanie?",
-    "text": "",
+    "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore laudantium nihil ipsum vero sunt odit quia ab esse fugiat, quam culpa voluptatum consectetur qui nobis est reiciendis autem temporibus rem?",
+    "btn": "Blog",
     "more": "Zobacz wiecej"
   },
   "form": {

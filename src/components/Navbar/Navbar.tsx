@@ -75,11 +75,7 @@ const Navbar = ({ isSubPage }: INavbar) => {
           )}
           <li className={styles["nav-item"]}>
             <div className={styles["nav-language"]}>
-              <LanguageSwitch
-                onChangeLanguage={(lang) =>
-                  console.log(`Language changed to ${lang}`)
-                }
-              />
+              <LanguageSwitch />
             </div>
           </li>
         </div>
@@ -101,15 +97,17 @@ const Navbar = ({ isSubPage }: INavbar) => {
           <div className={styles.overlay} onClick={openMenu}>
             <li className={isOpen ? styles["menu-active"] : styles["menu"]}>
               <Link to="/portfolio" onClick={openMenu} className={styles.link}>
-                Portfolio
+                {t("navbar.portfolio")}
               </Link>
               <Link to="/blog" onClick={openMenu} className={styles.link}>
-                Blog
+                {t("navbar.blog")}
               </Link>
               <a href="#contact" onClick={openMenu} className={styles.link}>
-                Contact
+                {t("navbar.contact")}
               </a>
-              <div className={styles["nav-language"]}></div>
+              <div className={styles["nav-language"]}>
+                <LanguageSwitch />
+              </div>
               <div className={styles["menu__icons"]}>
                 <a
                   href="https://www.linkedin.com/in/wiktoria-sk%C3%B3rek/"

@@ -12,10 +12,13 @@ import imageAdobePhotoshop from "assets/software/photoshop.webp";
 import imageAdobeIlustrator from "assets/software/ilustrator.webp";
 import imageSketchup from "assets/software/sketchup.webp";
 
+import { useTranslation } from "react-i18next";
+
 const SkillsSection = () => {
+  const { t } = useTranslation();
   return (
     <section className={styles["section__skils"]} id="skills">
-      <h2>Skills</h2>
+      <h2> {t("home.skills.title")}</h2>
       <div className={styles["section__grid"]}>
         <div className={styles["section__card"]}>
           <div className={styles["section__circle"]}>
