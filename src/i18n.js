@@ -26,6 +26,7 @@ const resources = {
 const options = {
   resources,
   fallbackLng: "en",
+  lng: "en",
   debug: false,
   interpolation: {
     escapeValue: false,

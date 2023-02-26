@@ -1,0 +1,7 @@
+.switch {
+  width: 10rem;
+  height: 2rem;
+  border-radius: 12.5px;
+  border: 1px solid #a6a6a6;
+  background-color: #fff;
+}

@@ -81,6 +81,9 @@
   background: #474747;
 }
 .nav-language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 6rem;
   height: 3rem;
   color: white;

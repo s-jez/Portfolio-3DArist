@@ -1,5 +1,6 @@
-import { FC, ChangeEvent } from "react";
+import { ChangeEvent } from "react";
 import { useTranslation } from "react-i18next";
+import styles from "./LanguageSwitch.module.css";
 
 const LanguageSwitch = () => {
   const { i18n } = useTranslation();
@@ -9,7 +10,11 @@ const LanguageSwitch = () => {
   };
 
   return (
-    <select onChange={handleLanguageChange} value={i18n.language}>
+    <select
+      className={styles.switch}
+      onChange={handleLanguageChange}
+      value={i18n.language}
+    >
       <option value="en">EN</option>
       <option value="pl">PL</option>
     </select>
