@@ -1,23 +1,30 @@
-import { ChangeEvent } from "react";
+import { ChangeEvent, useState } from "react";
 import { useTranslation } from "react-i18next";
 import styles from "./LanguageSwitch.module.css";
 
 const LanguageSwitch = () => {
+  const [isToggle, setIsToggle] = useState<boolean>(false);
   const { i18n } = useTranslation();
 
-  const handleLanguageChange = (event: ChangeEvent<HTMLSelectElement>) => {
-    i18n.changeLanguage(event.target.value);
+  const handleLanguageChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setIsToggle(!isToggle);
+    i18n.changeLanguage(!isToggle ? "pl" : "en");
   };
 
   return (
-    <select
-      className={styles.switch}
-      onChange={handleLanguageChange}
-      value={i18n.language}
-    >
-      <option value="en">EN</option>
-      <option value="pl">PL</option>
-    </select>
+    <div className={styles["language-switch"]}>
+      <label>{isToggle ? "PL" : "EN"}</label>
+      <input
+        type="checkbox"
+        id="switch"
+        className={styles.switch}
+        onChange={handleLanguageChange}
+        checked={isToggle}
+      />
+      <label htmlFor="switch" className={styles.label}>
+        Toggle
+      </label>
+    </div>
   );
 };
 

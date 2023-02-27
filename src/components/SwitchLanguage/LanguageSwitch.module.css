@@ -1,7 +1,40 @@
+.language-switch {
+  display: flex;
+}
+
 .switch {
-  width: 10rem;
-  height: 2rem;
-  border-radius: 12.5px;
-  border: 1px solid #a6a6a6;
-  background-color: #fff;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 50px;
+  height: 30px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+.label:after {
+  content: "PL";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+.switch:checked + .label {
+  background: #499166;
+}
+.switch:checked + .label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+.label:active:after {
+  width: 40px;
 }
