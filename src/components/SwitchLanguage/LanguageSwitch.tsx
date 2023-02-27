@@ -1,12 +1,13 @@
-import { ChangeEvent, useState } from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import styles from "./LanguageSwitch.module.css";
 
 const LanguageSwitch = () => {
   const [isToggle, setIsToggle] = useState<boolean>(false);
+
   const { i18n } = useTranslation();
 
-  const handleLanguageChange = (event: ChangeEvent<HTMLInputElement>) => {
+  const handleLanguageChange = () => {
     setIsToggle(!isToggle);
     i18n.changeLanguage(!isToggle ? "pl" : "en");
   };
