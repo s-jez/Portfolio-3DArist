@@ -16,6 +16,9 @@
   margin: 0 1.5rem;
   font-family: "Changa One", cursive;
 }
+.nav-link {
+  display: flex;
+}
 .nav .nav-link::after {
   position: absolute;
   background: none repeat scroll 0 0 transparent;
@@ -50,6 +53,7 @@
   font-weight: 400;
   font-family: "Merienda One", "cursive";
   font-weight: 400;
+  white-space: nowrap;
 }
 .nav-title__artist {
   opacity: 90%;
@@ -79,20 +83,6 @@
   height: 3.5rem;
   border-radius: 50%;
   background: #474747;
-}
-.nav-language {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 6rem;
-  height: 3rem;
-  color: white;
-  border: 4px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.46);
-  border-radius: 15px;
-  padding: 1rem;
-  margin: 1rem 0;
-  cursor: pointer;
 }
 .mobile-nav {
   display: none;
@@ -193,9 +183,6 @@
   }
   .nav-title a {
     margin: 0;
-  }
-  .nav-language {
-    margin-right: 1rem;
   }
 }
 @media (max-width: 968px) {

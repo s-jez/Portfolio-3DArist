@@ -74,9 +74,7 @@ const Navbar = ({ isSubPage }: INavbar) => {
             </li>
           )}
           <li className={styles["nav-item"]}>
-            <div className={styles["nav-language"]}>
-              <LanguageSwitch />
-            </div>
+            <LanguageSwitch />
           </li>
         </div>
         <li className={styles["mobile-nav"]}>
