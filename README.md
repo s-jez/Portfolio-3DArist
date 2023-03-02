@@ -1,5 +1,5 @@
 # Portfolio 3D Arist (Front-end)
-Link to website: **https://portfolio-3-d-arist.vercel.app/**
+Link to website: **https://portfolio-3-d-arist.vercel.app/** (in progress..)
 
 ## Technologies
 - React.JS
