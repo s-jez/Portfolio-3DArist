@@ -1,20 +1,27 @@
+:root {
+  --nav-bg-color: rgba(0, 0, 0, 0.6);
+  --nav-text-color: #fff;
+  --nav-width: 100%;
+  --nav-font-family: "Changa One", cursive;
+}
+
 .nav {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: var(--nav-width);
   height: 4.25rem;
-  background: rgba(0, 0, 0, 0.6);
+  background: var(--nav-bg-color);
   z-index: 10;
 }
 .nav a {
   text-decoration: none;
-  color: #fff;
+  color: var(--nav-text-color);
   text-decoration: none;
   letter-spacing: 0.015rem;
   position: relative;
   padding: 15px 20px;
   margin: 0 1.5rem;
-  font-family: "Changa One", cursive;
+  font-family: var(--nav-font-family);
 }
 .nav-link {
   display: flex;
@@ -32,11 +39,11 @@
   width: 0;
 }
 .nav .nav-link:hover::after {
-  width: 100%;
+  width: var(--nav-width);
   left: 0;
 }
 .nav ul {
-  height: 100%;
+  height: var(--nav-width);
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -63,7 +70,7 @@
   margin: 0 1.5rem;
 }
 .nav-item {
-  font-family: "Changa One", cursive;
+  font-family: var(--nav-font-family);
   font-size: 1.5rem;
   margin-right: 5rem;
   margin: auto;
@@ -87,7 +94,7 @@
 .mobile-nav {
   display: none;
   padding: 0 0.5rem;
-  font-family: "Changa One", cursive;
+  font-family: var(--nav-font-family);
 }
 .logo {
   display: flex;
@@ -196,7 +203,7 @@
   }
   .mobile-nav {
     display: flex;
-    width: 100%;
+    width: var(--nav-width);
     justify-content: space-between;
   }
   .nav a {
