@@ -26,6 +26,7 @@ const Navbar = ({ isSubPage }: INavbar) => {
 
   const handleWindowResize = () => {
     window.innerWidth <= 968 ? setIsMobile(true) : setIsMobile(false);
+    setIsOpen(false);
   };
 
   useEffect(() => {
@@ -33,7 +34,6 @@ const Navbar = ({ isSubPage }: INavbar) => {
     return () => {
       window.removeEventListener("resize", handleWindowResize);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const openMenu = () => setIsOpen(!isOpen);
@@ -77,23 +77,36 @@ const Navbar = ({ isSubPage }: INavbar) => {
             <LanguageSwitch />
           </li>
         </div>
-        <li className={styles["mobile-nav"]}>
-          <Link to="/" className={styles["nav-logo"]}>
-            &#x200b;
-          </Link>
-          <div className={styles.hamburger}>
-            <Hamburger
-              rounded
-              onToggle={openMenu}
-              toggled={isOpen}
-              size={32}
-              color="white"
-            />
-          </div>
-        </li>
-        {isMobile && isOpen && (
-          <div className={styles.overlay} onClick={openMenu}>
-            <li className={isOpen ? styles["menu-active"] : styles["menu"]}>
+        <div className={!isOpen ? styles["mobile-nav"] : styles["menu-active"]}>
+          {!isOpen && (
+            <div className={styles["nav-mobile"]}>
+              <Link to="/" className={styles["nav-logo"]}>
+                &#x200b;
+              </Link>
+              <li className={styles.hamburger}>
+                <Hamburger
+                  rounded
+                  onToggle={openMenu}
+                  toggled={isOpen}
+                  size={32}
+                  color="white"
+                />
+              </li>
+            </div>
+          )}
+          {isOpen && isMobile && (
+            <div className={isOpen ? styles["menu-active"] : styles["menu"]}>
+              <div className={styles["hamburger-container"]}>
+                <div>
+                  <Hamburger
+                    rounded
+                    onToggle={openMenu}
+                    toggled={isOpen}
+                    size={32}
+                    color="white"
+                  />
+                </div>
+              </div>
               <Link to="/portfolio" onClick={openMenu} className={styles.link}>
                 {t("navbar.portfolio")}
               </Link>
@@ -103,9 +116,7 @@ const Navbar = ({ isSubPage }: INavbar) => {
               <a href="#contact" onClick={openMenu} className={styles.link}>
                 {t("navbar.contact")}
               </a>
-              <div className={styles["nav-language"]}>
-                <LanguageSwitch />
-              </div>
+              <LanguageSwitch />
               <div className={styles["menu__icons"]}>
                 <a
                   href="https://www.linkedin.com/in/wiktoria-sk%C3%B3rek/"
@@ -132,9 +143,9 @@ const Navbar = ({ isSubPage }: INavbar) => {
                   <img src={artstation} width={80} alt="artstation" />
                 </a>
               </div>
-            </li>
-          </div>
-        )}
+            </div>
+          )}
+        </div>
       </ul>
     </nav>
   );
