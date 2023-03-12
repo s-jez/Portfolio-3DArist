@@ -48,7 +48,7 @@ const Navbar = ({ isSubPage }: INavbar) => {
             <a href="#App">Wiktoria Skórek</a>
           </span>
         </li>
-        <div className={styles["nav-items"]}>
+        <li className={styles["nav-items"]}>
           {isSubPage && (
             <li className={styles["nav-item"]}>
               <Link to="/" className={styles["nav-link"]}>
@@ -76,14 +76,14 @@ const Navbar = ({ isSubPage }: INavbar) => {
           <li className={styles["nav-item"]}>
             <LanguageSwitch />
           </li>
-        </div>
-        <div className={!isOpen ? styles["mobile-nav"] : styles["menu-active"]}>
+        </li>
+        <li className={!isOpen ? styles["mobile-nav"] : styles["menu-active"]}>
           {!isOpen && (
             <div className={styles["nav-mobile"]}>
-              <Link to="/" className={styles["nav-logo"]}>
+              <a href="#App" className={styles["nav-logo"]}>
                 &#x200b;
-              </Link>
-              <li className={styles.hamburger}>
+              </a>
+              <div className={styles.hamburger}>
                 <Hamburger
                   rounded
                   onToggle={openMenu}
@@ -91,7 +91,7 @@ const Navbar = ({ isSubPage }: INavbar) => {
                   size={32}
                   color="white"
                 />
-              </li>
+              </div>
             </div>
           )}
           {isOpen && isMobile && (
@@ -145,7 +145,7 @@ const Navbar = ({ isSubPage }: INavbar) => {
               </div>
             </div>
           )}
-        </div>
+        </li>
       </ul>
     </nav>
   );
