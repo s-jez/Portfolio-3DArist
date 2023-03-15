@@ -2,13 +2,11 @@ import { useState, useRef, useEffect } from "react";
 import useOnClickOutside from "hooks/useOnClickOutside";
 import styles from "./Navbar.module.css";
 
-import linkedin from "assets/linkedin.webp";
-import instagram from "assets/instagram.webp";
-import artstation from "assets/artstation.webp";
+import { linkedin, artstation, instagram } from "assets/socials";
 import { Link } from "react-router-dom";
 import Hamburger from "hamburger-react";
 import { useTranslation } from "react-i18next";
-import LanguageSwitch from "components/SwitchLanguage/LanguageSwitch";
+import LanguageSwitch from "components/SwitchLanguage/Switch";
 
 interface INavbar {
   isSubPage: boolean;

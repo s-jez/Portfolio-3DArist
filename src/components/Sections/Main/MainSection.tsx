@@ -1,11 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import styles from "./MainSection.module.css";
 
-import linkedin from "assets/linkedin.webp";
-import instagram from "assets/instagram.webp";
-import artstation from "assets/artstation.webp";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { linkedin, instagram, artstation } from "assets/socials";
 
 const MainSection = () => {
   const { t } = useTranslation();
