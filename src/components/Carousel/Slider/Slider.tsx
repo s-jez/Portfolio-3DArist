@@ -3,10 +3,10 @@ import Arrows from "../Arrows/Arrows";
 import Dots from "../Dots/Dots";
 import styles from "./Slider.module.css";
 
-import sliderImage1 from "../../../assets/slider/wiktoria-skorek-damaged-castle.webp";
-import sliderImage2 from "../../../assets/slider/wiktoria-skorek-cow-s-skull-oil-painting.webp";
-import sliderImage3 from "../../../assets/slider/wiktoria-skorek-house.webp";
-import sliderImage4 from "../../../assets/slider/wiktoria-skorek-farm-house.webp";
+import sliderImage1 from "assets/slider/wiktoria-skorek-damaged-castle.webp";
+import sliderImage2 from "assets/slider/wiktoria-skorek-cow-s-skull-oil-painting.webp";
+import sliderImage3 from "assets/slider/wiktoria-skorek-house.webp";
+import sliderImage4 from "assets/slider/wiktoria-skorek-farm-house.webp";
 
 interface Image {
   src: string;
