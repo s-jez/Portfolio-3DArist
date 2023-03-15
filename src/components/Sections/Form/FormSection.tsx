@@ -1,5 +1,5 @@
 import { Button, TextField } from "@mui/material";
-import Arrow from "components/Carousel/Arrows/Arrow/Arrow";
+import Arrow from "components/Carousel/Arrows/Arrow";
 import styles from "./FormSection.module.css";
 import { useTranslation } from "react-i18next";
 

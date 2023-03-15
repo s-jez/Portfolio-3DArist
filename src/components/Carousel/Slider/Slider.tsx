@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import Arrows from "../Arrows/Arrows";
-import Dots from "../Dots/Dots";
+import Arrows from "components/Carousel/Arrows";
+import Dots from "components/Carousel/Dots";
 import styles from "./Slider.module.css";
 
 import sliderImage1 from "assets/slider/wiktoria-skorek-damaged-castle.webp";
