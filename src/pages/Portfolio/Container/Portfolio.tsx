@@ -1,30 +1,32 @@
 import { Container } from "@mui/system";
 import Navbar from "components/Navbar/Navbar";
 import { PortfolioCards } from "../Cards/PortfolioCards";
-import image from "assets/shiba.jpeg";
+import house1 from "assets/background.webp";
+import house2 from "assets/bg_house.webp";
+import house3 from "assets/bg.webp";
 
 const Portfolio = () => {
   const portfolioItem = [
     {
       id: 1,
       title: "Project 1",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      imageUrl: image,
-      linkUrl: "https://example.com/project1",
+      description: "This is my first project!",
+      imageUrl: house1,
+      linkUrl: "",
     },
     {
       id: 2,
       title: "Project 2",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      imageUrl: image,
-      linkUrl: "https://example.com/project1",
+      description: "This is my second project!",
+      imageUrl: house2,
+      linkUrl: "",
     },
     {
       id: 3,
       title: "Project 3",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      imageUrl: image,
-      linkUrl: "https://example.com/project1",
+      description: "This my third project!",
+      imageUrl: house3,
+      linkUrl: "",
     },
   ];
   return (

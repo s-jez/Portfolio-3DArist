@@ -1,11 +1,11 @@
 .search-bar {
   display: flex;
   justify-content: center;
-  background: rgb(188, 188, 188);
-  padding: 1rem;
+  margin: auto;
+  background: rgb(248, 248, 248);
   border-radius: 0.25rem;
+  padding: 0.5rem;
 }
 .search {
-  width: 30rem;
-  color: white;
+  width: 100%;
 }

@@ -26,7 +26,6 @@ export const PortfolioCard: FC<IPortfolioCardProps> = ({
         <p className={styles["portfolio-card-description"]}>{description}</p>
         <a
           href={linkUrl}
-          target="_blank"
           rel="noopener noreferrer"
           className={styles["portfolio-card-link"]}
         >
