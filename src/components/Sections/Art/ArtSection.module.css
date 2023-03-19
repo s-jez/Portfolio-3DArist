@@ -30,8 +30,8 @@
   font-size: 2.65rem;
   text-align: center;
   color: white;
-  margin: 2rem 0;
   font-weight: 400;
+  margin: 0 2.5rem;
 }
 .section__more {
   display: flex;
