@@ -54,7 +54,7 @@ const MainSection = () => {
           </div>
         </div>
         <div className={styles["main__frame"]}>
-          <Link to="/portfolio">
+          <Link to="/portfolio" target="_blank">
             <button className={styles["main__button"]}>Portfolio</button>
           </Link>
         </div>

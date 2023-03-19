@@ -14,8 +14,7 @@ const ArtSection = () => {
         <p>{t("home.art.text")}</p>
         <div className={styles["section__more"]}>
           <span>{t("home.art.more")}</span>
-          <Link to="/blog">
-            {" "}
+          <Link to="/blog" target="_blank">
             <button>{t("home.art.btn")}</button>
           </Link>
         </div>

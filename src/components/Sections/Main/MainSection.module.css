@@ -43,6 +43,9 @@
     linear-gradient(0deg, #728474, #728474);
   overflow: hidden;
 }
+.main__button:hover {
+  transform: scale(1.05);
+}
 .main__button:before {
   content: "";
   position: absolute;
