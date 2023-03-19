@@ -80,7 +80,7 @@ const Navbar = ({ isSubPage }: INavbar) => {
             </div>
           )}
           <div className={styles["nav-item"]}>
-            <LanguageSwitch />
+            {!isOpen && <LanguageSwitch />}
           </div>
         </li>
         <li className={!isOpen ? styles["mobile-nav"] : styles["menu-active"]}>
@@ -122,7 +122,7 @@ const Navbar = ({ isSubPage }: INavbar) => {
               <a href="#contact" onClick={openMenu} className={styles.link}>
                 {t("navbar.contact")}
               </a>
-              <LanguageSwitch />
+              {isOpen && <LanguageSwitch />}
               <div className={styles["menu__icons"]}>
                 <a
                   href="https://www.linkedin.com/in/wiktoria-sk%C3%B3rek/"
