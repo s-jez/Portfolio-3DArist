@@ -6,7 +6,6 @@ import FormSection from "components/Sections/Form/FormSection";
 import MainSection from "components/Sections/Main/MainSection";
 import SkillsSection from "components/Sections/Skills/SkillsSection";
 import "./Home.css";
-import Arrow from "components/Carousel/Arrows/Arrow";
 
 const Home = () => {
   return (
@@ -20,7 +19,6 @@ const Home = () => {
         <ArtSection />
         <FormSection />
       </main>
-      <Arrow />
       <Footer />
     </div>
   );

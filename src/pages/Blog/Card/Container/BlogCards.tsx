@@ -16,7 +16,6 @@ const BlogCards = ({ blogPosts, id }: IBlogCards) => {
   const card = blogPosts.find(
     (post) => post.id === Number.parseInt(id as string)
   );
-  console.log(card);
   if (!card) {
     return <div className={styles.blog}>{renderBlogCards(blogPosts)}</div>;
   } else {

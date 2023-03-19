@@ -43,44 +43,46 @@ const Navbar = ({ isSubPage }: INavbar) => {
             <div className={styles["nav-logo"]}></div>
           </Link>
           <span className={styles["nav-title__artist"]}>
-            <a href="#App">Wiktoria Skórek</a>
+            <Link to="/">
+              <div>Wiktoria Skórek</div>
+            </Link>
           </span>
         </li>
         <li className={styles["nav-items"]}>
           {isSubPage && (
-            <li className={styles["nav-item"]}>
+            <div className={styles["nav-item"]}>
               <Link to="/" className={styles["nav-link"]}>
                 {t("navbar.home")}
               </Link>
-            </li>
+            </div>
           )}
-          <li className={styles["nav-item"]}>
+          <div className={styles["nav-item"]}>
             <Link to="/portfolio" className={styles["nav-link"]}>
               {t("navbar.portfolio")}
             </Link>
-          </li>
-          <li className={styles["nav-item"]}>
+          </div>
+          <div className={styles["nav-item"]}>
             <Link to="/blog" className={styles["nav-link"]}>
               {t("navbar.blog")}
             </Link>
-          </li>
+          </div>
           {!isSubPage && (
-            <li className={styles["nav-item"]}>
+            <div className={styles["nav-item"]}>
               <a href="#contact" className={styles["nav-link"]}>
                 {t("navbar.contact")}
               </a>
-            </li>
+            </div>
           )}
-          <li className={styles["nav-item"]}>
+          <div className={styles["nav-item"]}>
             <LanguageSwitch />
-          </li>
+          </div>
         </li>
         <li className={!isOpen ? styles["mobile-nav"] : styles["menu-active"]}>
           {!isOpen && (
             <div className={styles["nav-mobile"]}>
-              <a href="#App" className={styles["nav-logo"]}>
-                &#x200b;
-              </a>
+              <div className={styles["nav-logo"]}>
+                <Link to="/">&#x200b;</Link>
+              </div>
               <div className={styles.hamburger}>
                 <Hamburger
                   rounded

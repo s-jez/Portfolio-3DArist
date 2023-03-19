@@ -4,6 +4,7 @@ import styles from "./MainSection.module.css";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { linkedin, instagram, artstation } from "assets/socials";
+import Arrow from "components/Carousel/Arrows/Arrow";
 
 const MainSection = () => {
   const { t } = useTranslation();
@@ -58,6 +59,7 @@ const MainSection = () => {
           </Link>
         </div>
       </div>
+      <Arrow direction="down" />
     </section>
   );
 };
