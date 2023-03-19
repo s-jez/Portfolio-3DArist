@@ -6,7 +6,7 @@ import { linkedin, artstation, instagram } from "assets/socials";
 import { Link } from "react-router-dom";
 import Hamburger from "hamburger-react";
 import { useTranslation } from "react-i18next";
-import LanguageSwitch from "components/SwitchLanguage/Switch";
+import LanguageSwitch from "components/SwitchLanguage/SwitchLang";
 
 interface INavbar {
   isSubPage: boolean;
@@ -37,6 +37,12 @@ const Navbar = ({ isSubPage }: INavbar) => {
   const openMenu = () => setIsOpen(!isOpen);
   return (
     <nav className={styles.nav} ref={node}>
+      {isOpen && (
+        <div
+          className={styles["overlay"]}
+          onClick={() => setIsOpen(false)}
+        ></div>
+      )}
       <ul>
         <li className={styles["nav-title"]}>
           <Link to="/">

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import styles from "./Switch.module.css";
+import styles from "./SwitchLang.module.css";
 
-const Switch = () => {
+const SwitchLang = () => {
   const [isToggle, setIsToggle] = useState<boolean>(false);
 
   const { i18n } = useTranslation();
@@ -29,4 +29,4 @@ const Switch = () => {
   );
 };
 
-export default Switch;
+export default SwitchLang;
