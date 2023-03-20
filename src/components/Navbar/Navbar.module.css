@@ -203,7 +203,7 @@
     margin: 0;
   }
 }
-@media (max-width: 968px) {
+@media (max-width: 982px) {
   .nav-title {
     display: none;
     visibility: hidden;

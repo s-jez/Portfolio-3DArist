@@ -28,7 +28,7 @@
 .main__button {
   position: relative;
   width: 26rem;
-  height: 8rem;
+  height: 7.5rem;
   border-radius: 15px;
   mix-blend-mode: luminosity;
   margin-bottom: 1rem;
@@ -137,7 +137,7 @@ h1 {
     margin-left: 2rem;
   }
   .main__button {
-    margin-top: 6rem;
+    margin-top: 2.25rem;
   }
   .main__info {
     margin: 0 10rem;

@@ -4,7 +4,7 @@
   cursor: pointer;
   width: 5rem;
   height: 5rem;
-  bottom: 5%;
+  bottom: 6.25%;
   right: 5%;
   mask-image: url("../../../../assets/circle-down.svg");
   mask-size: 80px;
@@ -22,11 +22,6 @@
     bottom: 2.5%;
   }
 }
-/* @media (max-height: 900px) {
-  .arrow {
-    bottom: -10%;
-  }
-} */
 @media (max-height: 450px) {
   .arrow {
     bottom: -100%;
