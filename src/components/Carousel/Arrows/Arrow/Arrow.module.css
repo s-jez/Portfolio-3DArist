@@ -10,10 +10,20 @@
   mask-size: 80px;
   mask-repeat: no-repeat;
   background-color: white;
+  transition: transform 0.25s ease;
 }
 .arrowUp {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
+}
+.arrow:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 1440px) {
+  .arrow,
+  .arrowUp {
+    mask-size: 75px;
+  }
 }
 @media (max-width: 600px) {
   .arrow,

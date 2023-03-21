@@ -84,6 +84,11 @@
   margin: 0 0.5rem;
   border-radius: 15px;
   border: 4px solid rgba(255, 255, 255, 0.3);
+  background-image: url("../../assets/background.webp");
+  background-size: 84px;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 .nav-circle {
   width: 3.5rem;

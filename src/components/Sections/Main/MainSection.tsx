@@ -17,9 +17,7 @@ const MainSection = () => {
             <span>i</span>
             <span>!</span>
           </div>
-          <div>
-            <h1> {t("home.header.title")}</h1>
-          </div>
+          <h1> {t("home.header.title")}</h1>
           <div className={styles["main__artist"]}>
             <div className={styles["artist"]}>
               <span>3D </span>
