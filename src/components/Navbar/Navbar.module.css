@@ -172,6 +172,10 @@
 }
 .menu__icons {
   margin-top: 1rem;
+  transition: transform 0.3s ease-out;
+}
+.menu__icons a > img:hover {
+  transform: scale(1.05);
 }
 .overlay {
   height: 100vh;

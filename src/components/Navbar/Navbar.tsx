@@ -128,7 +128,6 @@ const Navbar = ({ isSubPage }: INavbar) => {
                   href="https://www.linkedin.com/in/wiktoria-sk%C3%B3rek/"
                   target="_blank"
                   rel="noreferrer"
-                  className={styles["main__social"]}
                 >
                   <img src={linkedin} width={80} alt="linkedin" />
                 </a>
@@ -136,7 +135,6 @@ const Navbar = ({ isSubPage }: INavbar) => {
                   href="https://www.instagram.com/kosiawr/"
                   rel="noreferrer"
                   target="_blank"
-                  className={styles["main__social"]}
                 >
                   <img src={instagram} width={80} alt="instagram" />
                 </a>
@@ -144,7 +142,6 @@ const Navbar = ({ isSubPage }: INavbar) => {
                   href="https://www.artstation.com/wiktoria_skorek"
                   rel="noreferrer"
                   target="_blank"
-                  className={styles["main__social"]}
                 >
                   <img src={artstation} width={80} alt="artstation" />
                 </a>

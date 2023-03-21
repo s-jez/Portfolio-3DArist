@@ -11,6 +11,8 @@
   padding: 1rem;
   margin: 1rem 0;
   cursor: pointer;
+  font-family: "Changa One", cursive;
+  font-size: 1.4rem;
 }
 
 .switch {
@@ -27,6 +29,7 @@
   display: block;
   border-radius: 100px;
   position: relative;
+  margin-left: 0.5rem;
 }
 .label:after {
   content: "PL";
