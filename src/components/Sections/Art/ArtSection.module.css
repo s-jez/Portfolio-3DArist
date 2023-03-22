@@ -80,6 +80,14 @@
     right: 5%;
   }
 }
+@media (max-width: 1020px) {
+  .section__art h3 {
+    font-size: 2.8rem;
+  }
+  .section__block h4 {
+    font-size: 1.85rem;
+  }
+}
 @media (max-width: 600px) {
   .section__art {
     padding: 10rem 0rem;
@@ -87,12 +95,13 @@
   .section__block {
     width: 100%;
     right: 0;
+    font-size: 0.95rem;
   }
   .section__art h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .section__block h4 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
 @media (max-width: 360px) {
