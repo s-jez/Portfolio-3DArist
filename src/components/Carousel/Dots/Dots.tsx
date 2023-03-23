@@ -35,7 +35,7 @@ const Dots = ({ images, slideIndex, onSlideIndexChange }: IDots) => {
             className={styles.dot}
             key={index}
             style={{
-              backgroundColor: currentSlideIndex === index ? "black" : "white",
+              backgroundColor: currentSlideIndex === index ? "#333" : "white",
             }}
             onClick={() => handleSlideIndexChange(index)}
           />

@@ -19,6 +19,9 @@
 .arrow:hover {
   transform: scale(1.05);
 }
+.arrowUp:hover {
+  transform: scale(1.05) rotate(180deg);
+}
 @media (max-width: 1440px) {
   .arrow,
   .arrowUp {

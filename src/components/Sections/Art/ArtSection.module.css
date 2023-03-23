@@ -68,8 +68,8 @@
 }
 @media (max-width: 1440px) {
   .section__block {
-    width: 40%;
-    right: 55%;
+    width: 33%;
+    right: 65%;
   }
 }
 @media (max-width: 1200px) {

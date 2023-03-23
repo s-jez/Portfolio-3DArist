@@ -1,6 +1,6 @@
 .slider {
   margin-top: 22.5rem;
-  width: 60%;
+  width: 70%;
   height: 20rem;
   overflow: hidden;
   z-index: 1;
@@ -10,6 +10,12 @@
   background-position: center;
   background-size: cover;
   transition: all 0.4s;
+}
+@media (max-width: 1440px) {
+  .slider {
+    width: 80%;
+    margin-top: 28rem;
+  }
 }
 @media (max-width: 1200px) {
   .slider {
