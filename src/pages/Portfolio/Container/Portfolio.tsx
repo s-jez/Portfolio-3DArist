@@ -1,4 +1,3 @@
-import { Container } from "@mui/system";
 import Navbar from "components/Navbar/Navbar";
 import { PortfolioCards } from "../Cards/PortfolioCards";
 import house1 from "assets/background.webp";
@@ -32,9 +31,7 @@ const Portfolio = () => {
   return (
     <>
       <Navbar isSubPage={true} />
-      <Container>
-        <PortfolioCards portfolioList={portfolioItem} />
-      </Container>
+      <PortfolioCards portfolioList={portfolioItem} />
     </>
   );
 };

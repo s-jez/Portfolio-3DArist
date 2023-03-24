@@ -1,18 +1,21 @@
-import { Container } from "@mui/material";
-import Navbar from "components/Navbar/Navbar";
 import React from "react";
+import Navbar from "components/Navbar/Navbar";
 import BlogCards from "../Card/Container/BlogCards";
 import SearchBar from "../Card/SearchBar/SearchBar";
 import { blogPosts } from "../utils/blog";
+import styles from "./Blog.module.css";
+import { Container } from "@mui/system";
 
 const Blog = () => {
   return (
     <div id="#App">
       <Navbar isSubPage={true} />
-      <Container style={{ paddingTop: "5rem" }}>
-        <SearchBar />
+      <div className={styles.blog}>
+        <Container>
+          <SearchBar />
+        </Container>
         <BlogCards blogPosts={blogPosts} id="" />
-      </Container>
+      </div>
     </div>
   );
 };

@@ -1,0 +1,11 @@
+.blog {
+  width: 100%;
+  height: 100vh;
+  padding: 10rem 0;
+  background-color: #333;
+}
+@media (max-width: 1200px) {
+  .blog {
+    height: 100%;
+  }
+}

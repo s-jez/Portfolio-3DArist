@@ -11,6 +11,7 @@ html {
 body {
   font-family: "Merienda One", cursive;
   background-image: url("../src/assets/bubble-pattern.webp");
+  background-position: center;
 }
 
 /* Scrollbar */
