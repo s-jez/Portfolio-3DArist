@@ -128,15 +128,6 @@
   justify-content: flex-end;
   margin-right: 2.5rem;
 }
-.menu {
-  display: none;
-  width: 270px;
-  height: 20px;
-  background: rgba(41, 41, 41, 0.95);
-  border-radius: 30px;
-  padding: 20rem 0;
-  transform: translateX(-100%);
-}
 .menu-active {
   position: absolute;
   top: 0;
@@ -152,8 +143,8 @@
   background: rgba(41, 41, 41, 0.92);
   border-radius: 0px 0px 0px 30px;
   padding: 13rem 0rem 12.5rem 0rem;
-  transform: translateX(0);
   box-shadow: -10px 10px 7px rgba(0, 0, 0, 0.25);
+  animation: slideInRight 0.3s ease-in-out forwards;
 }
 
 .menu-active a > img {
@@ -252,5 +243,13 @@
   .nav-title {
     font-size: 1.2rem;
     white-space: nowrap;
+  }
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
   }
 }

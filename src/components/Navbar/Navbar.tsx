@@ -101,7 +101,7 @@ const Navbar = ({ isSubPage }: INavbar) => {
             </div>
           )}
           {isOpen && isMobile && (
-            <div className={isOpen ? styles["menu-active"] : styles["menu"]}>
+            <div className={isOpen && styles["menu-active"]}>
               <div className={styles["hamburger-container"]}>
                 <div>
                   <Hamburger
