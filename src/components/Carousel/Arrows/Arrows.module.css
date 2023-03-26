@@ -4,11 +4,13 @@
   align-items: center;
   font-size: 3.5rem;
   height: 100%;
-  margin: -1rem 2.5rem;
+  margin: -1rem 1.25rem;
   color: white;
 }
-
-.arrows span {
+.arrow {
+  padding: 0.25rem;
+}
+.arrow span {
   cursor: pointer;
   z-index: 1;
   user-select: none;

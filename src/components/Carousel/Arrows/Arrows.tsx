@@ -8,12 +8,12 @@ interface IArrows {
 const Arrows = ({ prevSlide, nextSlide }: IArrows) => {
   return (
     <div className={styles.arrows}>
-      <span className="prev" onClick={prevSlide}>
-        &#10094;
-      </span>
-      <span className="next" onClick={nextSlide}>
-        &#10095;
-      </span>
+      <div className={styles.arrow} onClick={prevSlide}>
+        <span>&#10094;</span>
+      </div>
+      <div className={styles.arrow} onClick={nextSlide}>
+        <span>&#10095;</span>
+      </div>
     </div>
   );
 };
