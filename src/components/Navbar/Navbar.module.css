@@ -176,7 +176,8 @@
 .overlay {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.45);
-  transition: all 0.3s;
+  opacity: 1;
+  animation: showOverlay 0.3s forwards;
 }
 .nav-mobile {
   width: 100%;
@@ -251,5 +252,13 @@
   }
   to {
     transform: translateX(0);
+  }
+}
+@keyframes showOverlay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
