@@ -145,7 +145,7 @@ h1 {
     margin: 0 10rem;
   }
   h1 {
-    line-height: 3.25rem;
+    line-height: 4rem;
   }
 }
 @media (max-width: 1440px) {
@@ -185,6 +185,7 @@ h1 {
   }
   h1 {
     white-space: nowrap;
+    line-height: 1.5rem;
   }
   .main__button {
     width: 22.5rem;

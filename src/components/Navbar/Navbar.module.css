@@ -76,19 +76,20 @@
   margin: auto;
 }
 .nav-logo {
-  width: 4rem;
-  height: 4rem;
+  width: 3.75rem;
+  height: 3.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0.5rem;
+  margin: 0.25rem 0.5rem;
   border-radius: 15px;
-  border: 4px solid rgba(255, 255, 255, 0.3);
+  border: 3px solid #fff;
   background-image: url("../../assets/background.webp");
   background-size: 84px;
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
+  animation: showOverlay 1s ease-in-out;
 }
 .nav-circle {
   width: 3.5rem;
