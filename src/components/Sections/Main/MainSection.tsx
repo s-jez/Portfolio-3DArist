@@ -20,7 +20,7 @@ const MainSection = () => {
           <h1> {t("home.header.title")}</h1>
           <div className={styles["main__artist"]}>
             <div className={styles["artist"]}>
-              <span>3D </span>
+              <span>3D</span>
               <span>ARTIST</span>
             </div>
             <div className={styles["main__socials"]}>
