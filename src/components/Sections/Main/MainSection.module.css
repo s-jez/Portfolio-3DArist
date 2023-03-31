@@ -42,6 +42,7 @@
   background: linear-gradient(0deg, #364c4a, #364c4a),
     linear-gradient(0deg, #728474, #728474);
   overflow: hidden;
+  animation: fade-in 1s ease-in-out;
 }
 .main__button:hover {
   transform: scale(1.05);
@@ -85,6 +86,7 @@
 .main__socials a > img {
   border-radius: 26px;
   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.25));
+  animation: fade-in 1s ease-in-out;
 }
 .main__social {
   cursor: pointer;
@@ -99,6 +101,7 @@
   font-weight: 400;
   white-space: nowrap;
   height: 14rem;
+  animation: fade-in 1s ease-in-out;
 }
 .main__hello span {
   display: inline-block;
@@ -119,6 +122,7 @@
   line-height: 100px;
   font-weight: 400;
   margin-left: -3rem;
+  animation: fade-in 1s ease-in-out;
 }
 .artist > :first-child {
   text-shadow: -1px 10px rgba(103, 103, 103, 0.7),
@@ -132,6 +136,7 @@ h1 {
   padding: 0 3rem;
   font-weight: 400;
   line-height: 1.5rem;
+  animation: fade-in 1s ease-in-out;
 }
 @media (min-width: 1020px) {
   .main__header {
@@ -294,5 +299,13 @@ h1 {
   }
   100% {
     transform: translateY(0rem);
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
