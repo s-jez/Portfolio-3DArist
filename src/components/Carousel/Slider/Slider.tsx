@@ -57,18 +57,14 @@ const Slider = () => {
     };
   }, [memoizedImages]);
   return (
-    <div
-      className={styles.slider}
-      style={{
-        backgroundImage: `url(${memoizedImages[slideIndex].src})`,
-      }}
-    >
+    <div className={styles.slider}>
       <Arrows nextSlide={nextSlide} prevSlide={prevSlide} />
       <Dots
         images={memoizedImages}
         slideIndex={slideIndex}
         onSlideIndexChange={setSlideIndex}
       />
+      <img src={memoizedImages[slideIndex].src} alt="slider" />
     </div>
   );
 };

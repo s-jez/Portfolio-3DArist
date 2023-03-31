@@ -4,7 +4,7 @@
   cursor: pointer;
   width: 5rem;
   height: 5rem;
-  bottom: 6.25%;
+  bottom: 5.25%;
   right: 5%;
   filter: brightness(0) invert(1);
   transition: transform 0.25s ease;

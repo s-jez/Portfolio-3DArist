@@ -9,10 +9,10 @@ const Arrows = ({ prevSlide, nextSlide }: IArrows) => {
   return (
     <div className={styles.arrows}>
       <div className={styles.arrow} onClick={prevSlide}>
-        <span>&#10094;</span>
+        <div>&#10094;</div>
       </div>
       <div className={styles.arrow} onClick={nextSlide}>
-        <span>&#10095;</span>
+        <div>&#10095;</div>
       </div>
     </div>
   );

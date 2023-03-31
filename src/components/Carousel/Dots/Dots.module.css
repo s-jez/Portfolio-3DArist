@@ -1,6 +1,10 @@
 .dots {
+  position: absolute;
   display: flex;
   justify-content: center;
+  bottom: 2.5%;
+  left: 0;
+  right: 0;
 }
 .dot {
   display: inline-block;

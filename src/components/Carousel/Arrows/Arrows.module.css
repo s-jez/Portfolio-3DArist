@@ -1,16 +1,16 @@
 .arrows {
+  width: 96.5%;
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 3.5rem;
   height: 100%;
-  margin: -1rem 1.25rem;
+  margin: 0rem 1.25rem;
   color: white;
 }
 .arrow {
   padding: 0.25rem;
-}
-.arrow span {
   cursor: pointer;
   z-index: 1;
   user-select: none;
@@ -18,5 +18,6 @@
 @media (max-width: 1020px) {
   .arrows {
     font-size: 2.5rem;
+    width: 92.5%;
   }
 }
