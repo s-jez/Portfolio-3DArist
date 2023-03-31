@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./Arrow.module.css";
+import arrow from "assets/arrow.svg";
 
 interface IArrow {
   direction?: string;
@@ -57,10 +58,13 @@ const Arrow = ({ direction = "down" }: IArrow) => {
     }
   };
   return (
-    <div
-      className={direction === "down" ? styles.arrow : styles.arrowUp}
-      onClick={handleClick}
-    ></div>
+    <div onClick={handleClick}>
+      <img
+        src={arrow}
+        className={direction === "down" ? styles.arrow : styles.arrowUp}
+        alt="arrow"
+      />
+    </div>
   );
 };
 

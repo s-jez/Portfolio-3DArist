@@ -6,37 +6,24 @@
   height: 5rem;
   bottom: 6.25%;
   right: 5%;
-  mask-image: url("../../../../assets/circle-down.svg");
-  mask-size: 80px;
-  mask-repeat: no-repeat;
-  background-color: white;
+  filter: brightness(0) invert(1);
   transition: transform 0.25s ease;
+}
+.arrow:hover {
+  transform: scale(1.05);
 }
 .arrowUp {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-.arrow:hover {
-  transform: scale(1.05);
-}
 .arrowUp:hover {
   transform: scale(1.05) rotate(180deg);
 }
-@media (max-width: 1440px) {
+@media (max-width: 768px) {
   .arrow,
   .arrowUp {
-    mask-size: 75px;
-  }
-}
-@media (max-width: 600px) {
-  .arrow,
-  .arrowUp {
-    mask-size: 65px;
+    width: 4rem;
+    height: 4rem;
     bottom: 2.5%;
-  }
-}
-@media (max-height: 450px) {
-  .arrow {
-    bottom: -100%;
   }
 }
