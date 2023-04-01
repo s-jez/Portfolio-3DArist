@@ -77,16 +77,18 @@
   right: 150%;
 }
 .main__socials {
+  max-width: 21rem;
   display: flex;
   margin-top: 3.5rem;
+  padding: 0.5rem;
 }
 .main__socials a {
   margin: 0 1rem;
 }
 .main__socials a > img {
-  border-radius: 26px;
-  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.25));
+  border-radius: 16px;
   animation: fade-in 1s ease-in-out;
+  box-shadow: 0px 3px 25px -6px rgba(182, 182, 182, 0.6);
 }
 .main__social {
   cursor: pointer;
@@ -177,7 +179,7 @@ h1 {
     font-size: 2rem;
   }
   .main__artist {
-    font-size: 3.5rem;
+    font-size: 3.75rem;
     white-space: nowrap;
     margin: 0;
     padding: 0;
@@ -204,6 +206,12 @@ h1 {
       -0px 1px rgba(205, 205, 205, 0.7);
     margin-right: 1rem;
   }
+  .main__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media (min-width: 601px) {
   .main__hello {
@@ -217,7 +225,7 @@ h1 {
     justify-content: center;
     align-items: center;
   }
-  .main__socials img {
+  .main__socials a > img {
     width: 60px;
     height: 60px;
   }
@@ -240,6 +248,11 @@ h1 {
   }
   .main__artist {
     font-size: 3rem;
+  }
+  .main__socials {
+    width: 100%;
+    order: 1;
+    margin-top: 2.5rem;
   }
 }
 @media (max-height: 1000px) {
@@ -266,8 +279,8 @@ h1 {
     padding: 23.5rem 0;
   }
   .main__socials a > img {
-    width: 70px;
-    object-fit: contain;
+    width: 4.25rem;
+    height: 4.25rem;
   }
 }
 @media (max-width: 340px) {
@@ -275,7 +288,8 @@ h1 {
     padding: 0;
   }
   .main__socials a > img {
-    width: 55px;
+    width: 3.5rem;
+    height: 3.5rem;
   }
   .main__hello {
     font-size: 7.75rem;

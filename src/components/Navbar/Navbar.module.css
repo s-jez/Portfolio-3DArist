@@ -123,6 +123,15 @@
   z-index: 10;
   border-radius: 50%;
 }
+.hamburger-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  border: 2px solid white;
+  border-radius: 50%;
+}
 .hamburger-container {
   width: 100%;
   display: flex;

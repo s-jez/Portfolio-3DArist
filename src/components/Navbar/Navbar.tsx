@@ -103,7 +103,7 @@ const Navbar = ({ isSubPage }: INavbar) => {
           {isOpen && isMobile && (
             <div className={isOpen && styles["menu-active"]}>
               <div className={styles["hamburger-container"]}>
-                <div>
+                <div className={styles["hamburger-circle"]}>
                   <Hamburger
                     rounded
                     onToggle={openMenu}
