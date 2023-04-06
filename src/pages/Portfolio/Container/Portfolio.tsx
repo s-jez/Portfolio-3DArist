@@ -3,6 +3,8 @@ import { PortfolioCards } from "../Cards/PortfolioCards";
 import house1 from "assets/background.webp";
 import house2 from "assets/bg_house.webp";
 import house3 from "assets/bg.webp";
+import styles from "./Portfolio.module.css";
+import { Container } from "@mui/material";
 
 const Portfolio = () => {
   const portfolioItem = [
@@ -29,10 +31,15 @@ const Portfolio = () => {
     },
   ];
   return (
-    <>
+    <div id="#App">
       <Navbar isSubPage={true} />
-      <PortfolioCards portfolioList={portfolioItem} />
-    </>
+      <div className={styles.portfolio}>
+        <Container>
+          <h1>Portfolio</h1>
+        </Container>
+        <PortfolioCards portfolioList={portfolioItem} />
+      </div>
+    </div>
   );
 };
 

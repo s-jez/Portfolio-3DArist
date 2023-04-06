@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "components/Navbar/Navbar";
 import BlogCards from "../Card/Container/BlogCards";
-import SearchBar from "../Card/SearchBar/SearchBar";
 import { blogPosts } from "../utils/blog";
 import styles from "./Blog.module.css";
 import { Container } from "@mui/system";
@@ -12,7 +11,7 @@ const Blog = () => {
       <Navbar isSubPage={true} />
       <div className={styles.blog}>
         <Container>
-          <SearchBar />
+          <h1>Blog</h1>
         </Container>
         <BlogCards blogPosts={blogPosts} id="" />
       </div>

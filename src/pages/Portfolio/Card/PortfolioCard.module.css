@@ -7,8 +7,8 @@
   background-color: #454545;
   overflow: hidden;
   transition: box-shadow 0.2s ease-in-out;
-  width: 300px;
-  height: 400px;
+  width: 20rem;
+  height: 28.125rem;
   margin: 16px;
   border-radius: 20px;
 }

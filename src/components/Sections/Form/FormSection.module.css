@@ -18,8 +18,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 39%;
-  padding: 1.25rem;
+  min-width: 45.5%;
+  padding: 1.5rem;
 }
 .form h3 {
   color: white;
@@ -59,6 +59,11 @@
   cursor: pointer;
   height: 2.5rem;
   width: 7rem;
+}
+@media (min-width: 1440px) {
+  .form {
+    min-width: 40%;
+  }
 }
 @media (max-width: 1020px) {
   .form {

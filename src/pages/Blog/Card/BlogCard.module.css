@@ -3,22 +3,23 @@
   flex-direction: column;
   justify-content: center;
   color: white;
-  background: #454545;
   width: 20rem;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #454545;
   margin: 1rem;
-  border-radius: 6px;
+  border-radius: 20px;
+  overflow: hidden;
 }
 .card__img,
 .full-card__img {
   display: block;
-  width: 18rem;
+  width: 20rem;
   height: 16rem;
   background: #494949;
-  margin: 1rem;
   border-radius: 0.3rem;
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.05);
   object-fit: cover;
+  margin-bottom: 1rem;
 }
 .card__title {
   text-align: center;
